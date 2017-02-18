@@ -1,0 +1,47 @@
+{namespace main}
+
+/**
+ * @param content
+ */
+{template .render}
+	<main>
+		<div class="senna-loading-bar"></div>
+		<div class="outer-wrapper"></div>
+		{call .header /}
+
+		{$content}
+	</main>
+{/template}
+
+/**
+ *
+ */
+{template .header}
+	<header>
+		{call .navigation /}
+		{call .title /}
+	</header>
+{/template}
+
+/**
+ *
+ */
+{template .navigation}
+	<ul class="nav">
+		<li><a href="/details.html">Details</a></li>
+		<li><a href="/rsvp.html">Rsvp</a></li>
+	</ul>
+{/template}
+
+/**
+ *
+ */
+{template .title}
+	<div class="title">
+		<a href="/">
+			<span class="title-name">>Jonathan &amp; Marissa</span>
+			<span class="title-desc">Are getting married!</span>
+		</a>
+	</div>
+{/template}
+
