@@ -1,0 +1,47 @@
+@import "variables";
+
+.nav {
+	padding: 0;
+	display: block;
+	text-align: center;
+	margin: 30px 0 30px;
+	.nav-item {
+		display: inline-block;
+		padding: 0 15px;
+		@media (min-width: $small) {
+			padding: 0 25px;
+		}
+		@media (min-width: $medium) {
+			padding: 0 40px;
+		}
+		a {
+			cursor: pointer;
+			color: $primary;
+			letter-spacing: 5px;
+			transition: .6s;
+			font-weight: 500;
+			font-size: 16px;
+			text-decoration: none;
+			text-transform: uppercase;
+			@media (min-width: $small) {
+				font-size: 20px;
+				font-weight: 300;
+				letter-spacing: 8px;
+			}
+			@media (min-width: $medium) {
+				font-size: 22px;
+				font-weight: 300;
+				letter-spacing: 10px;
+			}
+			&:hover {
+				color: rgba($primary, .6);
+				text-decoration: none;
+				background-color: transparent;
+				font-weight: 500;
+				@media (min-width: $small) {
+					font-weight: 300;
+				}
+			}
+		}
+	}
+}

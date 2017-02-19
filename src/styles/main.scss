@@ -1,13 +1,3 @@
-@import "normalize.css/normalize";
-
-$primary: #0e141a;
-$secondary: #fff;
-
-@font-family-sans-serif: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-@font-family-cursive: 'Monsieur La Doulaise', cursive;
-@font-family-sans: 'Cinzel', serif;
-@font-default: @font-family-sans-serif;
-
 @import "topbar";
 @import "base";
 @import "header";
@@ -15,3 +5,9 @@ $secondary: #fff;
 @import "details";
 @import "rsvp";
 @import "data-table";
+@import "wrapper";
+
+
+.senna-loading-bar {
+	color: $secondary;
+}

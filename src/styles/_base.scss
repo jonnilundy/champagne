@@ -1,1 +1,76 @@
+@import "variables";
 
+body {
+	font-family: $font-default;
+	text-align: center;
+}
+
+h1 {
+	font-weight: 300;
+	font-size: 34px;
+	font-family: $font-family-cursive;
+	color: $primary;
+	padding-bottom: 10px;
+	line-height: 50px;
+	@media (min-width: $small) {
+		font-size: inherit;
+	}
+	@media (min-width: $medium) {
+		line-height: normal;
+	}
+}
+
+h2 {
+	font-size: 45px;
+	font-weight: 300;
+	color: $primary;
+	margin-bottom: 30px;
+	letter-spacing: 4px;
+	line-height: 65px;
+	@media (min-width: $small) {
+		font-size: 35px;
+		line-height: 55px;
+	}
+	@media (min-width: $medium) {
+		line-height: 47px;
+		font-size: 32px;
+	}
+}
+
+h3 {
+	font-size: 40px;
+	letter-spacing: 2px;
+	color: $primary;
+	@media (min-width: $small) {
+		font-size: 33px;
+	}
+	@media (min-width: $medium) {
+		line-height: normal;
+		font-size: 30px;
+	}
+}
+
+p {
+	font-size: 45px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	line-height: 50px;
+	font-weight: 100;
+	color: $primary;
+	letter-spacing: 3px;
+	@media (min-width: $small) {
+		font-size: 30px;
+		line-height: 40px;
+	}
+}
+a {
+	text-decoration: none;
+	font-weight: 300;
+	color: $primary;
+	transition: .6s;
+	&:hover {
+		text-decoration: none;
+		font-weight: 500;
+		color: rgba($secondary, .7);
+	}
+}
