@@ -21,6 +21,7 @@ h1 {
 }
 
 h2 {
+	font-family: $font-family-sans;
 	font-size: 45px;
 	font-weight: 300;
 	color: $primary;
@@ -57,7 +58,6 @@ p {
 	line-height: 50px;
 	font-weight: 100;
 	color: $primary;
-	letter-spacing: 3px;
 	@media (min-width: $small) {
 		font-size: 30px;
 		line-height: 40px;
