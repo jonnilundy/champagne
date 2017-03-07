@@ -1,0 +1,8 @@
+{
+	"id": "auth",
+	"type": "wedeploy/auth",
+	"env": {
+		"WEDEPLOY_AUTH_PASSWORD": "true",
+		"WEDEPLOY_AUTH_SECURE_FIELDS": "providers,password,resetKey,supportedScopes"
+	}
+}

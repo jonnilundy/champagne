@@ -1,0 +1,7 @@
+{
+    "env": {
+        "WEDEPLOY_WEB_PATH": "/dist/"
+    },
+    "id": "hosting",
+    "type": "wedeploy/hosting"
+}

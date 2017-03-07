@@ -1,0 +1,29 @@
+---
+description: "RSVP List"
+title: "Data"
+hidden: true
+---
+
+{namespace data}
+
+/**
+ * 
+ */
+{template .render}
+	{call main.render data="all"}
+		{param content kind="html"}
+			{call .data /}
+		{/param}
+	{/call}
+{/template}
+
+/**
+ * 
+ */
+{template .data}
+	<div class="data">
+		<div class="container container-fluid">
+		</div>
+	</div>
+	<footer></footer>
+{/template}
