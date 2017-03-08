@@ -1,6 +1,6 @@
 'use strict';
 
-var auth = WeDeploy.auth(`auth.acupofmojo.wedeploy.io`);
+var auth = WeDeploy.auth(`auth.jonathan-and-marissa.wedeploy.me`);
 var popup = document.getElementById('popup');
 
 function signInWithEmailAndPassword() {
@@ -18,7 +18,7 @@ function showAlertWrongEmailOrPassword() {
     <button>
       <span class="close icon-12-close-short" onclick="closeAlert()"></span>
     </button>`;
-  popup.classList.add('visible');
+  popup.classList.add('visible');s
 }
 
 function closeAlert() {

@@ -1,6 +1,6 @@
 'use strict';
 
-var auth = WeDeploy.auth(`auth.acupofmojo.wedeploy.io`);
+var auth = WeDeploy.auth(`auth.jonathan-and-marissa.wedeploy.me`);
 
 function main() {
 	if (!auth.currentUser) {
