@@ -1,10 +1,10 @@
 ---
 description: "RSVP List"
-title: "Data"
+title: "Mojo"
 hidden: true
 ---
 
-{namespace data}
+{namespace mojo}
 
 /**
  * 
@@ -12,7 +12,7 @@ hidden: true
 {template .render}
 	{call main.render data="all"}
 		{param content kind="html"}
-			{call .data /}
+			{call .mojo /}
 		{/param}
 	{/call}
 {/template}
@@ -20,10 +20,17 @@ hidden: true
 /**
  * 
  */
-{template .data}
-	<div class="data">
+{template .mojo}
+	<div class="mojo">
 		<div class="container container-fluid">
 		</div>
 	</div>
 	<footer></footer>
+	<script src="js/mojo.js"></script>
 {/template}
+
+
+
+
+
+

@@ -1,0 +1,50 @@
+---
+description: "Login to see RSVP list"
+title: "Login"
+hidden: true
+---
+
+{namespace login}
+
+/**
+ * 
+ */
+{template .render}
+	{call main.render data="all"}
+		{param content kind="html"}
+			{call .login /}
+		{/param}
+	{/call}
+{/template}
+
+/**
+ * 
+ */
+{template .login}
+	<div class="login">
+		<div class="container container-fluid">
+			<form name="signIn" class="form" onsubmit="signInWithEmailAndPassword(); return false;">
+
+					<div class="form-group">
+						<label>Email</label>
+						<input type="email" placeholder="youremail@company.com" class="form-control" name="email" value="" maxlength="100" autofocus="" required="" />
+					</div>
+
+					<div class="form-group">
+						<div class="col-flex-row-spacebetween-center">
+							<label>Password</label>
+                            <a class="forgot-password" href="../forgot-password/" tabindex="-1">Forgot your password?</a>
+						</div>
+						<input type="password" placeholder="Password (at least 6 characters)" class="form-control" name="password" value="" maxlength="100" required="" />
+					</div>
+
+					<div class="btn-wrapper">
+						<button type="submit" class="btn btn-success" name="submit">Login</button>
+					</div>
+
+				</form>
+		</div>
+	</div>
+	<footer></footer>
+	<script src="js/login.js"></script>
+{/template}
