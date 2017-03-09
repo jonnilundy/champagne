@@ -23,6 +23,8 @@ hidden: true
 {template .login}
 	<div class="login">
 		<div class="container container-fluid">
+			<div id="popup" class="popup alert-danger"></div>
+
 			<form name="signIn" class="form" onsubmit="signInWithEmailAndPassword(); return false;">
 
 					<div class="form-group">
@@ -33,7 +35,6 @@ hidden: true
 					<div class="form-group">
 						<div class="col-flex-row-spacebetween-center">
 							<label>Password</label>
-                            <a class="forgot-password" href="../forgot-password/" tabindex="-1">Forgot your password?</a>
 						</div>
 						<input type="password" placeholder="Password (at least 6 characters)" class="form-control" name="password" value="" maxlength="100" required="" />
 					</div>

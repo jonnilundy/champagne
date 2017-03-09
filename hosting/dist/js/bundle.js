@@ -21979,6 +21979,7 @@ babelHelpers;
     function $login(opt_data, opt_ignored, opt_ijData) {
       ie_open('div', null, null, 'class', 'login');
       ie_open('div', null, null, 'class', 'container container-fluid');
+      ie_void('div', null, null, 'id', 'popup', 'class', 'popup alert-danger');
       ie_open('form', null, null, 'name', 'signIn', 'class', 'form', 'onsubmit', 'signInWithEmailAndPassword(); return false;');
       ie_open('div', null, null, 'class', 'form-group');
       ie_open('label');
@@ -21992,9 +21993,6 @@ babelHelpers;
       ie_open('label');
       itext('Password');
       ie_close('label');
-      ie_open('a', null, null, 'class', 'forgot-password', 'href', '../forgot-password/', 'tabindex', '-1');
-      itext('Forgot your password?');
-      ie_close('a');
       ie_close('div');
       ie_open('input', null, null, 'type', 'password', 'placeholder', 'Password (at least 6 characters)', 'class', 'form-control', 'name', 'password', 'value', '', 'maxlength', '100', 'required', '');
       ie_close('input');
