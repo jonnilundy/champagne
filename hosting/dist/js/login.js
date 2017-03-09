@@ -1,6 +1,6 @@
 'use strict';
 
-var auth = WeDeploy.auth(`auth.jonathan-and-marissa.wedeploy.me`);
+var auth = WeDeploy.auth(`auth.jonathan-and-marissa.wedeploy.io`);
 var popup = document.getElementById('popup');
 
 function signInWithEmailAndPassword() {
