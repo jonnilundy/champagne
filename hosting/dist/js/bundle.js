@@ -5840,14 +5840,6 @@ babelHelpers;
 			_this.scheduledBatchData_ = null;
 
 			/**
-    * Throws exception when validator returns an `Error` instance.
-    * @type {boolean}
-    * @default false
-    * @protected
-    */
-			_this.throwValidationError_ = false;
-
-			/**
     * Object that contains information about all this instance's state keys.
     * @type {!Object<string, !Object>}
     * @protected
@@ -5885,7 +5877,7 @@ babelHelpers;
 					var value = info.state === State.KeyStates.INITIALIZED ? this.get(name) : this.initialValues_[name];
 					if (!isDefAndNotNull(value)) {
 						var errorMessage = 'The property called "' + name + '" is required but didn\'t receive a value.';
-						if (this.getThrowValidationError()) {
+						if (this.shouldThrowValidationError()) {
 							throw new Error(errorMessage);
 						} else {
 							console.error(errorMessage);
@@ -5904,7 +5896,7 @@ babelHelpers;
 			key: 'assertValidatorReturnInstanceOfError_',
 			value: function assertValidatorReturnInstanceOfError_(validatorReturn) {
 				if (validatorReturn instanceof Error) {
-					if (this.getThrowValidationError()) {
+					if (this.shouldThrowValidationError()) {
 						throw validatorReturn;
 					} else {
 						console.error('Warning: ' + validatorReturn);
@@ -6222,18 +6214,6 @@ babelHelpers;
 			}
 
 			/**
-    * Gets the configuration value for whether or not should throw error when
-    * vaildator functions returns an `Error` instance.
-    * @return {boolean}
-    */
-
-		}, {
-			key: 'getThrowValidationError',
-			value: function getThrowValidationError() {
-				return this.throwValidationError_;
-			}
-
-			/**
     * Merges the STATE static variable for the given constructor function.
     * @param  {!Function} ctor Constructor function.
     * @return {boolean} Returns true if merge happens, false otherwise.
@@ -6514,15 +6494,15 @@ babelHelpers;
 			}
 
 			/**
-    * Sets the configuration value for whether or not should throw error when
+    * Returns a boolean that determines whether or not should throw error when
     * vaildator functions returns an `Error` instance.
-    * @param {boolean} throwValidationError
+    * @return {boolean} By default returns false.
     */
 
 		}, {
-			key: 'setThrowValidationError',
-			value: function setThrowValidationError(throwValidationError) {
-				this.throwValidationError_ = throwValidationError;
+			key: 'shouldThrowValidationError',
+			value: function shouldThrowValidationError() {
+				return false;
 			}
 
 			/**
@@ -22003,6 +21983,12 @@ babelHelpers;
       ie_close('button');
       ie_close('div');
       ie_close('form');
+      ie_open('button', null, null, 'class', 'logout', 'onclick', 'signOut();');
+      ie_void('span', null, null, 'class', 'icon-12-leave');
+      ie_open('div', null, null, 'class', 'btn-tooltip');
+      itext('Sign Out');
+      ie_close('div');
+      ie_close('button');
       ie_close('div');
       ie_close('div');
       ie_void('footer');
@@ -22315,17 +22301,17 @@ babelHelpers;
       ie_open('h2');
       itext('Please RSVP by March 30, 2017');
       ie_close('h2');
-      ie_open('form', null, null, 'class', 'rsvp-form');
+      ie_open('form', null, null, 'class', 'rsvp-form', 'method', 'post');
       ie_open('div', null, null, 'class', 'form-group');
       ie_open('div', null, null, 'class', 'row');
       ie_open('label', null, null, 'class', 'col-md-12 col-sm-6');
       itext('Full Name');
       ie_close('label');
-      ie_open('input', null, null, 'type', 'text', 'class', 'col-sm-6', 'id', 'first-name', 'name', 'first-name', 'placeholder', 'First');
+      ie_open('input', null, null, 'type', 'text', 'class', 'col-sm-6', 'id', 'first_name', 'name', 'first_name', 'placeholder', 'First');
       ie_close('input');
       ie_close('div');
       ie_open('div', null, null, 'class', 'item-container');
-      ie_open('input', null, null, 'type', 'text', 'class', 'col-sm-6', 'id', 'last-name', 'name', 'last-name', 'placeholder', 'Last');
+      ie_open('input', null, null, 'type', 'text', 'class', 'col-sm-6', 'id', 'last_name', 'name', 'last_name', 'placeholder', 'Last');
       ie_close('input');
       ie_close('div');
       ie_close('div');
@@ -22360,7 +22346,7 @@ babelHelpers;
       ie_open('label');
       itext('How many will be coming with you?');
       ie_close('label');
-      ie_open('input', null, null, 'type', 'number', 'name', 'guest-count');
+      ie_open('input', null, null, 'type', 'number', 'name', 'guest_count');
       ie_close('input');
       ie_close('div');
       ie_close('div');
@@ -22370,7 +22356,7 @@ babelHelpers;
       ie_close('label');
       ie_open('div', null, null, 'class', 'container-outer');
       ie_open('div', null, null, 'class', 'item-container');
-      ie_open('input', null, null, 'class', 'diet', 'type', 'number', 'name', 'gluten', 'maxlength', '2');
+      ie_open('input', null, null, 'class', 'diet', 'type', 'number', 'name', 'gluten', 'max', '9');
       ie_close('input');
       ie_open('label', null, null, 'class', 'sublabel');
       itext('Gluten-Free');
@@ -22379,7 +22365,7 @@ babelHelpers;
       ie_close('div');
       ie_open('div', null, null, 'class', 'container-outer');
       ie_open('div', null, null, 'class', 'item-container');
-      ie_open('input', null, null, 'class', 'diet', 'type', 'number', 'name', 'dairy', 'maxlength', '2');
+      ie_open('input', null, null, 'class', 'diet', 'type', 'number', 'name', 'dairy', 'max', '9');
       ie_close('input');
       ie_open('label', null, null, 'class', 'sublabel');
       itext('Dairy-Free');
@@ -22392,11 +22378,11 @@ babelHelpers;
       ie_open('label');
       itext('What is your favorite song on the dancefloor?');
       ie_close('label');
-      ie_open('input', null, null, 'type', 'text', 'id', 'song-name', 'name', 'song-name', 'placeholder', 'Song');
+      ie_open('input', null, null, 'type', 'text', 'id', 'song_name', 'name', 'song_name', 'placeholder', 'Song');
       ie_close('input');
       ie_close('div');
       ie_open('div', null, null, 'class', 'item-container');
-      ie_open('input', null, null, 'type', 'text', 'id', 'song-artist', 'name', 'song-artist', 'placeholder', 'Artist');
+      ie_open('input', null, null, 'type', 'text', 'id', 'song_artist', 'name', 'song_artist', 'placeholder', 'Artist');
       ie_close('input');
       ie_close('div');
       ie_close('div');
@@ -22409,6 +22395,7 @@ babelHelpers;
       ie_close('div');
       ie_close('div');
       ie_void('footer');
+      ie_void('script', null, null, 'src', 'js/rsvp.js');
     }
     exports.rsvp = $rsvp;
     if (goog.DEBUG) {

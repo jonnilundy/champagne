@@ -4,7 +4,6 @@
   "private": false,
   "repository": "jonnilundy/jonathan-and-marissa",
   "dependencies": {
-    "marble": "^2.3.0",
     "normalize.css": "^5.0.0"
   },
   "devDependencies": {

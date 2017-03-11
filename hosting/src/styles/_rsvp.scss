@@ -1,0 +1,119 @@
+.last_name {
+	margin-left: 1px;
+}
+
+.container-outer {
+	width: 100%;
+}
+
+.diet {
+	width: 10%;
+}
+
+input[type="text"] {
+	width: 100%;
+}
+
+input {
+	font-size: 30px;
+	width: 100%;
+	padding: 5px;
+	padding-left: 10px;
+	font-weight: 300;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	border: none;
+	background: none;
+	border-left: 1px solid rgba(255,255,255,.9);
+	color: rgba(255,255,255, 1)
+
+}
+
+input[type="checkbox"] {
+	margin-bottom: 10px;
+	background: rgba(255,255,255, .8);
+	height: 25px;
+	width: 30px;
+}
+
+textarea {
+	font-size: 30px;
+	padding: 5px;
+	padding-left: 10px;
+	margin-top: 10px;
+	font-weight: 300;
+	height: 150px;
+	width: 100%;
+	border: none;
+	border-radius: 2px;
+	background: rgba(255,255,255, .8);
+}
+
+textarea:focus {
+	border: none;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: rgba(255,255,255,.8);
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: rgba(255,255,255,.8);
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: rgba(255,255,255,.8);
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: rgba(255,255,255,.8);
+}
+
+button {
+	background-color: rgba(10,13,7,.1);
+	color: white;
+	padding: 20px 30px;
+	font-size: 30px;
+	font-weight: 300;
+	border: 1px solid #CCC;
+	border-radius: 2px;
+	margin-top: 26px;
+	margin-bottom: 10px;
+}
+
+*:focus {
+    outline: none;
+}
+
+#submit {
+	text-align: center;
+}
+
+#submit button {
+	transition-duration: 0.4s;
+}
+
+#submit button:hover{
+	background-color: rgba(255,255,255,.2);
+}
+
+
+
+
+// ----------------------------------------------------------------------- //
+
+.rsvp {
+	form {
+		font-weight: 100;
+		text-align: left;
+		padding-left: 10px;
+		padding-right: 10px;
+		font-size: 16px;
+	}
+
+	label {
+		font-weight: 300;
+		color: $primary;
+		display: block;
+		font-size: 35px;
+		margin-top: 35px;
+	}
+}
+

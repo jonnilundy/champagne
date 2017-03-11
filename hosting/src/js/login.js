@@ -1,6 +1,10 @@
 'use strict';
 
-var auth = WeDeploy.auth(`auth.jonathan-and-marissa.wedeploy.io`);
+var DOMAIN = window.location.hostname.split(".").slice(-3).join(".");
+
+var auth = WeDeploy.auth(`auth.${DOMAIN}`);
+
+
 var popup = document.getElementById('popup');
 
 function signInWithEmailAndPassword() {
@@ -18,7 +22,7 @@ function showAlertWrongEmailOrPassword() {
     <button>
       <span class="close icon-12-close-short" onclick="closeAlert()"></span>
     </button>`;
-  popup.classList.add('visible');s
+  popup.classList.add('visible');
 }
 
 function closeAlert() {
@@ -26,5 +30,13 @@ function closeAlert() {
 }
 
 auth.onSignIn((user) => {
-  location.href = '/mojo.html';
+  document.location.href = '/mojo.html';
 });
+
+function signOut() {
+  auth
+    .signOut()
+    .then(() => {
+      location.href = '/login.html';
+    });
+}

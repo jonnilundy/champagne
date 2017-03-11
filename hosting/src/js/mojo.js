@@ -3,22 +3,22 @@
 
 // AUTH //
 
-var auth = WeDeploy.auth(`auth.jonathan-and-marissa.wedeploy.io`);
+var DOMAIN = window.location.hostname.split(".").slice(-3).join(".");
 
-function main() {
-	if (!auth.currentUser) {
-		window.location = "/login.html";
-	}
+var auth = WeDeploy.auth(`auth.${DOMAIN}`);
+
+if (!auth.currentUser) {
+  document.location.href = '/login.html';
 }
-
-var rsvpList = document.querySelector('.rsvpList');
 
 
 // DATA //
 
+var rsvpList = document.querySelector('.rsvpList');
+
 WeDeploy
-  .data('data.jonathan-and-marissa.wedeploy.io')
-  .orderBy('last-name')
+  .data(`data.${DOMAIN}`)
+  .orderBy('last_name')
   .get('rsvp')
 	.then(function(response) {
 		appendRsvp(response);
@@ -32,9 +32,11 @@ function appendRsvp(rsvp) {
 
 	rsvp.forEach(function(guest) {
 		guestList += '<tr>' +
-			'<td class="first-name">'+guest.first-name+'</td>' +
-			'<td class="last-name">'+guest.last-name+'</td>' +
+			'<td class="first_name">'+guest.first_name+'</td>' +
+			'<td class="last_name">'+guest.last_name+'</td>' +
 			'<td class="email">'+guest.email+'</td>' +
+			'<td class="attending">'+guest.attend+'</td>' +
+			'<td class="message">'+guest.message+'</td>' +
 			'<tr>'
 	});
 
