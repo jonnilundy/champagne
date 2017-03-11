@@ -1,6 +1,63 @@
 [
 	{
-		"path": "/rsvp",
-		"data": true
+		"description": "Posts submission of RSVP form",
+		"path": "/rsvp/*",
+		"method": "POST",
+		"data": true,
+		"parameters": {
+			"first_name": {
+				"type": "string",
+				"required": "true"
+			},
+			"last_name": {
+				"type": "string",
+				"required": "true"
+			},
+			"email": {
+				"type": "string",
+				"required": "true"
+			},
+			"street": {
+				"type": "string",
+				"required": "true"
+			},
+			"city": {
+				"type": "string",
+				"required": "true"
+			},
+			"state": {
+				"type": "string",
+				"required": "true"
+			},
+			"zip": {
+				"type": "number",
+				"required": "true"
+			},
+			"Attending": {
+				"type": "boolean",
+				"required": "true"
+			},
+			"dairy": {
+				"type": "boolean"
+			},
+			"gluten": {
+				"type": "boolean"
+			},
+			"song": {
+				"type": "string"
+			},
+			"artist": {
+				"type": "string"
+			}
+		}
+	},
+	{
+		"description": "Fetches form submissions",
+		"path": "/rsvp/*",
+		"method": ["GET", "PATCH", "PUT", "DELETE"],
+		"data": true,
+		"auth": {
+			"validator": "$auth != null"
+		}
 	}
 ]
