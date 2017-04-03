@@ -21703,10 +21703,10 @@ babelHelpers;
      */
     function $render(opt_data, opt_ignored, opt_ijData) {
       opt_data = opt_data || {};
-      var param18 = function param18() {
+      var param3 = function param3() {
         $details(null, null, opt_ijData);
       };
-      $templateAlias1(soy.$$assignDefaults({ content: param18 }, opt_data), null, opt_ijData);
+      $templateAlias1(soy.$$assignDefaults({ content: param3 }, opt_data), null, opt_ijData);
     }
     exports.render = $render;
     if (goog.DEBUG) {
@@ -21932,10 +21932,10 @@ babelHelpers;
      */
     function $render(opt_data, opt_ignored, opt_ijData) {
       opt_data = opt_data || {};
-      var param28 = function param28() {
+      var param13 = function param13() {
         $login(null, null, opt_ijData);
       };
-      $templateAlias1(soy.$$assignDefaults({ content: param28 }, opt_data), null, opt_ijData);
+      $templateAlias1(soy.$$assignDefaults({ content: param13 }, opt_data), null, opt_ijData);
     }
     exports.render = $render;
     if (goog.DEBUG) {
@@ -22092,10 +22092,10 @@ babelHelpers;
      */
     function $render(opt_data, opt_ignored, opt_ijData) {
       opt_data = opt_data || {};
-      var param35 = function param35() {
+      var param20 = function param20() {
         $mojo(null, null, opt_ijData);
       };
-      $templateAlias1(soy.$$assignDefaults({ content: param35 }, opt_data), null, opt_ijData);
+      $templateAlias1(soy.$$assignDefaults({ content: param20 }, opt_data), null, opt_ijData);
     }
     exports.render = $render;
     if (goog.DEBUG) {
@@ -22271,10 +22271,10 @@ babelHelpers;
      */
     function $render(opt_data, opt_ignored, opt_ijData) {
       opt_data = opt_data || {};
-      var param42 = function param42() {
+      var param27 = function param27() {
         $rsvp(null, null, opt_ijData);
       };
-      $templateAlias1(soy.$$assignDefaults({ content: param42 }, opt_data), null, opt_ijData);
+      $templateAlias1(soy.$$assignDefaults({ content: param27 }, opt_data), null, opt_ijData);
     }
     exports.render = $render;
     if (goog.DEBUG) {
