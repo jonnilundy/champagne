@@ -1,119 +1,114 @@
-.last_name {
-	margin-left: 1px;
-}
-
-.container-outer {
-	width: 100%;
-}
-
-.diet {
-	width: 10%;
-}
-
-input[type="text"] {
-	width: 100%;
-}
-
-input {
-	font-size: 30px;
-	width: 100%;
-	padding: 5px;
-	padding-left: 10px;
-	font-weight: 300;
-	margin-bottom: 20px;
-	margin-top: 10px;
-	border: none;
-	background: none;
-	border-left: 1px solid rgba(255,255,255,.9);
-	color: rgba(255,255,255, 1)
-
-}
-
-input[type="checkbox"] {
-	margin-bottom: 10px;
-	background: rgba(255,255,255, .8);
-	height: 25px;
-	width: 30px;
-}
-
-textarea {
-	font-size: 30px;
-	padding: 5px;
-	padding-left: 10px;
-	margin-top: 10px;
-	font-weight: 300;
-	height: 150px;
-	width: 100%;
-	border: none;
-	border-radius: 2px;
-	background: rgba(255,255,255, .8);
-}
-
-textarea:focus {
-	border: none;
-}
-
-::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color: rgba(255,255,255,.8);
-}
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-   color: rgba(255,255,255,.8);
-}
-::-moz-placeholder { /* Mozilla Firefox 19+ */
-   color: rgba(255,255,255,.8);
-}
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-   color: rgba(255,255,255,.8);
-}
-
-button {
-	background-color: rgba(10,13,7,.1);
-	color: white;
-	padding: 20px 30px;
-	font-size: 30px;
-	font-weight: 300;
-	border: 1px solid #CCC;
-	border-radius: 2px;
-	margin-top: 26px;
-	margin-bottom: 10px;
-}
-
-*:focus {
-    outline: none;
-}
-
-#submit {
-	text-align: center;
-}
-
-#submit button {
-	transition-duration: 0.4s;
-}
-
-#submit button:hover{
-	background-color: rgba(255,255,255,.2);
-}
-
-
-
 
 // ----------------------------------------------------------------------- //
 
 .rsvp {
-	form {
+	.form-group {
 		font-weight: 100;
 		text-align: left;
 		padding-left: 10px;
 		padding-right: 10px;
-		font-size: 16px;
+
+		h2 {
+			margin-bottom: 30px;
+		}
+
+		label {
+			font-weight: 300;
+			font-family: $font-family-sans;
+			color: $primary;
+			font-size: 15px;
+			margin-top: 35px;
+			text-align: left;
+			display: inline;
+			vertical-align: center;
+
+			&.sublabel {
+				font-family: $font-default;
+				font-weight: 300;
+			}
+
+			@media (min-width: $medium) {
+				font-size: 20px;
+			}
+		}
+
+		input {
+			font-size: 16px;
+			font-family: $font-default;
+			width: 100%;
+			padding: 5px;
+			padding-left: 10px;
+			font-weight: 300;
+			margin-bottom: 10px;
+			margin-top: 10px;
+			border: none;
+			background: none;
+			border-left: 1px solid rgba($primary,.9);
+			color: rgba(255,255,255, 1);
+			&:focus {
+				outline: none;
+			}
+
+			&[type="checkbox"]  {
+				margin-bottom: 10px;
+				background: rgba($primary, .8);
+				height: 25px;
+				width: 30px;
+			}
+			&[type="radio"] {
+				margin-top: 0;
+				width: 20px;
+			}
+			&.number {
+				width: 25px;
+			}
+
+			@media (min-width: $medium) {
+				font-size: 20px;
+			}
+
+		}
+		/* Placeholder compatability */
+		::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+		    color: rgba($primary, .6);
+		}
+		:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+		   color: rgba($primary, .6);
+		}
+		::-moz-placeholder { /* Mozilla Firefox 19+ */
+		   color: rgba($primary, .6);
+		}
+		:-ms-input-placeholder { /* Internet Explorer 10-11 */
+		   color: rgba($primary, .6);
+		}
 	}
 
-	label {
+	button {
+		background-color: rgba($primary,.1);
+		font-family: $font-family-sans;
+		color: white;
+		padding: 10px 20px;
+		font-size: 15px;
 		font-weight: 300;
-		color: $primary;
-		display: block;
-		font-size: 35px;
-		margin-top: 35px;
+		border: 1px solid $primary;
+		border-radius: 2px;
+		margin-top: 26px;
+		margin-bottom: 10px;
+		text-align: center;
+		transition-duration: 0.4s;
+		
+		&:focus {
+			outline: none;
+		}
+
+		&:hover {
+			background-color: rgba($primary,.2);
+			cursor: pointer;
+		}
+
+		@media (min-width: $medium) {
+				font-size: 20px;
+				padding: 15px 25px;
+			}
 	}
 }
-

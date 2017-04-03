@@ -1,0 +1,16 @@
+.details {
+	h2 {
+		font-size: 35px;
+		margin-bottom: 30px;
+		line-height: normal;
+		&.detail-sub {
+			font-family: $font-family-cursive;
+		}
+	}
+
+	p {
+		font-size: 22px;
+		padding: 10px 0;
+		line-height: 35px;
+	}
+}

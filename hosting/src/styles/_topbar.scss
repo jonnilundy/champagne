@@ -17,30 +17,25 @@
 		a {
 			cursor: pointer;
 			color: $primary;
-			letter-spacing: 5px;
+			letter-spacing: 3px;
 			transition: .6s;
-			font-weight: 500;
-			font-size: 16px;
+			font-weight: 300;
+			font-size: 14px;
 			text-decoration: none;
 			text-transform: uppercase;
 			@media (min-width: $small) {
-				font-size: 20px;
+				font-size: 16px;
 				font-weight: 300;
-				letter-spacing: 8px;
+				letter-spacing: 5px;
 			}
 			@media (min-width: $medium) {
-				font-size: 22px;
-				font-weight: 300;
-				letter-spacing: 10px;
+				font-size: 18px;
 			}
 			&:hover {
-				color: rgba($primary, .6);
+				color: rgba($secondary, .5);
 				text-decoration: none;
 				background-color: transparent;
-				font-weight: 500;
-				@media (min-width: $small) {
-					font-weight: 300;
-				}
+				font-weight: 300;
 			}
 		}
 	}

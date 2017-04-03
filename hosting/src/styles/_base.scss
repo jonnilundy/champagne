@@ -3,6 +3,7 @@
 body {
 	font-family: $font-default;
 	text-align: center;
+
 }
 
 h1 {
@@ -22,11 +23,11 @@ h1 {
 
 h2 {
 	font-family: $font-family-sans;
-	font-size: 45px;
+	font-size: 22px;
 	font-weight: 300;
 	color: $primary;
-	margin-bottom: 30px;
-	letter-spacing: 4px;
+	margin-bottom: 10px;
+	margin-top: 10px;
 	line-height: 65px;
 	@media (min-width: $small) {
 		font-size: 35px;
@@ -71,6 +72,6 @@ a {
 	&:hover {
 		text-decoration: none;
 		font-weight: 500;
-		color: rgba($secondary, .7);
+		color: rgba($primary, .7);
 	}
 }
