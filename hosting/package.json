@@ -15,6 +15,7 @@
     "metal-dom": "^2.6.0",
     "metal-tabs": "^2.3.0",
     "metal-toggler": "^2.0.0",
-    "run-sequence": "^1.2.2"
+    "run-sequence": "^1.2.2",
+    "marble": "^2.9.0"
   }
 }

@@ -21583,12 +21583,12 @@ babelHelpers;
     function $navigation(opt_data, opt_ignored, opt_ijData) {
       ie_open('ul', null, null, 'class', 'nav');
       ie_open('li', null, null, 'class', 'nav-item');
-      ie_open('a', null, null, 'href', '/details.html');
+      ie_open('a', null, null, 'href', '/details');
       itext('Details');
       ie_close('a');
       ie_close('li');
       ie_open('li', null, null, 'class', 'nav-item');
-      ie_open('a', null, null, 'href', '/rsvp.html');
+      ie_open('a', null, null, 'href', '/rsvp');
       itext('Rsvp');
       ie_close('a');
       ie_close('li');
@@ -21652,154 +21652,6 @@ babelHelpers;
   this['metalNamed']['main']['templates'] = templates;
   this['metal']['main'] = templates;
   /* jshint ignore:end */
-}).call(this);
-'use strict';
-
-(function () {
-  /* jshint ignore:start */
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-
-  var templates;
-  goog.loadModule(function (exports) {
-
-    // This file was automatically generated from details.soy.
-    // Please don't edit this file by hand.
-
-    /**
-     * @fileoverview Templates in namespace details.
-     * @public
-     */
-
-    goog.module('details.incrementaldom');
-
-    /** @suppress {extraRequire} */
-    var soy = goog.require('soy');
-    /** @suppress {extraRequire} */
-    var soydata = goog.require('soydata');
-    /** @suppress {extraRequire} */
-    goog.require('goog.i18n.bidi');
-    /** @suppress {extraRequire} */
-    goog.require('goog.asserts');
-    /** @suppress {extraRequire} */
-    goog.require('goog.string');
-    var IncrementalDom = goog.require('incrementaldom');
-    var ie_open = IncrementalDom.elementOpen;
-    var ie_close = IncrementalDom.elementClose;
-    var ie_void = IncrementalDom.elementVoid;
-    var ie_open_start = IncrementalDom.elementOpenStart;
-    var ie_open_end = IncrementalDom.elementOpenEnd;
-    var itext = IncrementalDom.text;
-    var iattr = IncrementalDom.attr;
-
-    var $templateAlias1 = Soy.getTemplate('main.incrementaldom', 'render');
-
-    /**
-     * @param {Object<string, *>=} opt_data
-     * @param {(null|undefined)=} opt_ignored
-     * @param {Object<string, *>=} opt_ijData
-     * @return {void}
-     * @suppress {checkTypes}
-     */
-    function $render(opt_data, opt_ignored, opt_ijData) {
-      opt_data = opt_data || {};
-      var param18 = function param18() {
-        $details(null, null, opt_ijData);
-      };
-      $templateAlias1(soy.$$assignDefaults({ content: param18 }, opt_data), null, opt_ijData);
-    }
-    exports.render = $render;
-    if (goog.DEBUG) {
-      $render.soyTemplateName = 'details.render';
-    }
-
-    /**
-     * @param {Object<string, *>=} opt_data
-     * @param {(null|undefined)=} opt_ignored
-     * @param {Object<string, *>=} opt_ijData
-     * @return {void}
-     * @suppress {checkTypes}
-     */
-    function $details(opt_data, opt_ignored, opt_ijData) {
-      ie_open('div', null, null, 'class', 'details');
-      ie_open('div', null, null, 'class', 'container');
-      ie_open('div', null, null, 'class', 'row text-center');
-      ie_open('h2');
-      itext('You\'re invited');
-      ie_open('br');
-      ie_close('br');
-      itext('to our wedding!');
-      ie_close('h2');
-      ie_open('h2', null, null, 'class', 'detail-sub');
-      itext('June 10th, 2017');
-      ie_close('h2');
-      ie_open('a', null, null, 'href', 'https://goo.gl/u2Bdjh');
-      ie_open('p');
-      itext('20711 E Mesarica Rd');
-      ie_open('br');
-      ie_close('br');
-      itext('Covina, CA 91724');
-      ie_close('p');
-      ie_close('a');
-      ie_close('div');
-      ie_close('div');
-      ie_close('div');
-      ie_void('footer');
-    }
-    exports.details = $details;
-    if (goog.DEBUG) {
-      $details.soyTemplateName = 'details.details';
-    }
-
-    exports.render.params = [];
-    exports.render.types = {};
-    exports.details.params = [];
-    exports.details.types = {};
-    templates = exports;
-    return exports;
-  });
-
-  var details = function (_Component) {
-    babelHelpers.inherits(details, _Component);
-
-    function details() {
-      babelHelpers.classCallCheck(this, details);
-      return babelHelpers.possibleConstructorReturn(this, (details.__proto__ || Object.getPrototypeOf(details)).apply(this, arguments));
-    }
-
-    return details;
-  }(Component);
-
-  Soy.register(details, templates);
-  this['metalNamed']['details'] = this['metalNamed']['details'] || {};
-  this['metalNamed']['details']['details'] = details;
-  this['metalNamed']['details']['templates'] = templates;
-  this['metal']['details'] = templates;
-  /* jshint ignore:end */
-}).call(this);
-'use strict';
-
-(function () {
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-  var templates = this['metal']['details'];
-
-  var details = function (_Component) {
-    babelHelpers.inherits(details, _Component);
-
-    function details() {
-      babelHelpers.classCallCheck(this, details);
-      return babelHelpers.possibleConstructorReturn(this, (details.__proto__ || Object.getPrototypeOf(details)).apply(this, arguments));
-    }
-
-    return details;
-  }(Component);
-
-  ;
-
-  Soy.register(details, templates);
-
-  this['metal']['details'] = details;
 }).call(this);
 'use strict';
 
@@ -21885,6 +21737,30 @@ babelHelpers;
 'use strict';
 
 (function () {
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+  var templates = this['metal']['index'];
+
+  var pageIndex = function (_Component) {
+    babelHelpers.inherits(pageIndex, _Component);
+
+    function pageIndex() {
+      babelHelpers.classCallCheck(this, pageIndex);
+      return babelHelpers.possibleConstructorReturn(this, (pageIndex.__proto__ || Object.getPrototypeOf(pageIndex)).apply(this, arguments));
+    }
+
+    return pageIndex;
+  }(Component);
+
+  ;
+
+  Soy.register(pageIndex, templates);
+
+  this['metal']['pageIndex'] = pageIndex;
+}).call(this);
+'use strict';
+
+(function () {
   /* jshint ignore:start */
   var Component = this['metal']['component'];
   var Soy = this['metal']['Soy'];
@@ -21892,7 +21768,310 @@ babelHelpers;
   var templates;
   goog.loadModule(function (exports) {
 
-    // This file was automatically generated from login.soy.
+    // This file was automatically generated from index.soy.
+    // Please don't edit this file by hand.
+
+    /**
+     * @fileoverview Templates in namespace details.
+     * @public
+     */
+
+    goog.module('details.incrementaldom');
+
+    /** @suppress {extraRequire} */
+    var soy = goog.require('soy');
+    /** @suppress {extraRequire} */
+    var soydata = goog.require('soydata');
+    /** @suppress {extraRequire} */
+    goog.require('goog.i18n.bidi');
+    /** @suppress {extraRequire} */
+    goog.require('goog.asserts');
+    /** @suppress {extraRequire} */
+    goog.require('goog.string');
+    var IncrementalDom = goog.require('incrementaldom');
+    var ie_open = IncrementalDom.elementOpen;
+    var ie_close = IncrementalDom.elementClose;
+    var ie_void = IncrementalDom.elementVoid;
+    var ie_open_start = IncrementalDom.elementOpenStart;
+    var ie_open_end = IncrementalDom.elementOpenEnd;
+    var itext = IncrementalDom.text;
+    var iattr = IncrementalDom.attr;
+
+    var $templateAlias1 = Soy.getTemplate('main.incrementaldom', 'render');
+
+    /**
+     * @param {Object<string, *>=} opt_data
+     * @param {(null|undefined)=} opt_ignored
+     * @param {Object<string, *>=} opt_ijData
+     * @return {void}
+     * @suppress {checkTypes}
+     */
+    function $render(opt_data, opt_ignored, opt_ijData) {
+      opt_data = opt_data || {};
+      var param21 = function param21() {
+        $details(null, null, opt_ijData);
+      };
+      $templateAlias1(soy.$$assignDefaults({ content: param21 }, opt_data), null, opt_ijData);
+    }
+    exports.render = $render;
+    if (goog.DEBUG) {
+      $render.soyTemplateName = 'details.render';
+    }
+
+    /**
+     * @param {Object<string, *>=} opt_data
+     * @param {(null|undefined)=} opt_ignored
+     * @param {Object<string, *>=} opt_ijData
+     * @return {void}
+     * @suppress {checkTypes}
+     */
+    function $details(opt_data, opt_ignored, opt_ijData) {
+      ie_open('div', null, null, 'class', 'details');
+      ie_open('div', null, null, 'class', 'container');
+      ie_open('div', null, null, 'class', 'row text-center');
+      ie_open('h2');
+      itext('You\'re invited');
+      ie_open('br');
+      ie_close('br');
+      itext('to our wedding!');
+      ie_close('h2');
+      ie_open('h2', null, null, 'class', 'detail-sub');
+      itext('June 10th, 2017');
+      ie_close('h2');
+      ie_open('a', null, null, 'href', 'https://goo.gl/u2Bdjh');
+      ie_open('p');
+      itext('20711 E Mesarica Rd');
+      ie_open('br');
+      ie_close('br');
+      itext('Covina, CA 91724');
+      ie_close('p');
+      ie_close('a');
+      ie_close('div');
+      ie_close('div');
+      ie_close('div');
+      ie_void('footer');
+    }
+    exports.details = $details;
+    if (goog.DEBUG) {
+      $details.soyTemplateName = 'details.details';
+    }
+
+    exports.render.params = [];
+    exports.render.types = {};
+    exports.details.params = [];
+    exports.details.types = {};
+    templates = exports;
+    return exports;
+  });
+
+  var details = function (_Component) {
+    babelHelpers.inherits(details, _Component);
+
+    function details() {
+      babelHelpers.classCallCheck(this, details);
+      return babelHelpers.possibleConstructorReturn(this, (details.__proto__ || Object.getPrototypeOf(details)).apply(this, arguments));
+    }
+
+    return details;
+  }(Component);
+
+  Soy.register(details, templates);
+  this['metalNamed']['index'] = this['metalNamed']['index'] || {};
+  this['metalNamed']['index']['details'] = details;
+  this['metalNamed']['index']['templates'] = templates;
+  this['metal']['index'] = templates;
+  /* jshint ignore:end */
+}).call(this);
+'use strict';
+
+(function () {
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+  var templates = this['metal']['index'];
+
+  var details = function (_Component) {
+    babelHelpers.inherits(details, _Component);
+
+    function details() {
+      babelHelpers.classCallCheck(this, details);
+      return babelHelpers.possibleConstructorReturn(this, (details.__proto__ || Object.getPrototypeOf(details)).apply(this, arguments));
+    }
+
+    return details;
+  }(Component);
+
+  ;
+
+  Soy.register(details, templates);
+
+  this['metal']['details'] = details;
+}).call(this);
+'use strict';
+
+(function () {
+  /* jshint ignore:start */
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+
+  var templates;
+  goog.loadModule(function (exports) {
+
+    // This file was automatically generated from index.soy.
+    // Please don't edit this file by hand.
+
+    /**
+     * @fileoverview Templates in namespace guestlist.
+     * @public
+     */
+
+    goog.module('guestlist.incrementaldom');
+
+    /** @suppress {extraRequire} */
+    var soy = goog.require('soy');
+    /** @suppress {extraRequire} */
+    var soydata = goog.require('soydata');
+    /** @suppress {extraRequire} */
+    goog.require('goog.i18n.bidi');
+    /** @suppress {extraRequire} */
+    goog.require('goog.asserts');
+    /** @suppress {extraRequire} */
+    goog.require('goog.string');
+    var IncrementalDom = goog.require('incrementaldom');
+    var ie_open = IncrementalDom.elementOpen;
+    var ie_close = IncrementalDom.elementClose;
+    var ie_void = IncrementalDom.elementVoid;
+    var ie_open_start = IncrementalDom.elementOpenStart;
+    var ie_open_end = IncrementalDom.elementOpenEnd;
+    var itext = IncrementalDom.text;
+    var iattr = IncrementalDom.attr;
+
+    var $templateAlias1 = Soy.getTemplate('main.incrementaldom', 'render');
+
+    /**
+     * @param {Object<string, *>=} opt_data
+     * @param {(null|undefined)=} opt_ignored
+     * @param {Object<string, *>=} opt_ijData
+     * @return {void}
+     * @suppress {checkTypes}
+     */
+    function $render(opt_data, opt_ignored, opt_ijData) {
+      opt_data = opt_data || {};
+      var param28 = function param28() {
+        $guestlist(null, null, opt_ijData);
+      };
+      $templateAlias1(soy.$$assignDefaults({ content: param28 }, opt_data), null, opt_ijData);
+    }
+    exports.render = $render;
+    if (goog.DEBUG) {
+      $render.soyTemplateName = 'guestlist.render';
+    }
+
+    /**
+     * @param {Object<string, *>=} opt_data
+     * @param {(null|undefined)=} opt_ignored
+     * @param {Object<string, *>=} opt_ijData
+     * @return {void}
+     * @suppress {checkTypes}
+     */
+    function $guestlist(opt_data, opt_ignored, opt_ijData) {
+      ie_open('div', null, null, 'class', 'guestlist');
+      ie_open('div', null, null, 'class', 'container container-fluid');
+      ie_open('form', null, null, 'id', 'section-container');
+      ie_open('h2');
+      itext('GUEST LIST');
+      ie_close('h2');
+      ie_open('table', null, null, 'class', ' table');
+      ie_open('thead');
+      ie_open('th', null, null, 'class', 'first-name');
+      itext('First');
+      ie_close('th');
+      ie_open('th', null, null, 'class', 'last-name');
+      itext('Last');
+      ie_close('th');
+      ie_open('th', null, null, 'class', 'email');
+      itext('Email');
+      ie_close('th');
+      ie_open('th', null, null, 'class', 'attending');
+      itext('Attending');
+      ie_close('th');
+      ie_open('th', null, null, 'class', 'message');
+      itext('Message');
+      ie_close('th');
+      ie_close('thead');
+      ie_void('tbody', null, null, 'class', 'rsvpList');
+      ie_close('table');
+      ie_close('form');
+      ie_close('div');
+      ie_close('div');
+      ie_void('footer');
+      ie_void('script', null, null, 'src', '/js/guestlist.js');
+    }
+    exports.guestlist = $guestlist;
+    if (goog.DEBUG) {
+      $guestlist.soyTemplateName = 'guestlist.guestlist';
+    }
+
+    exports.render.params = [];
+    exports.render.types = {};
+    exports.guestlist.params = [];
+    exports.guestlist.types = {};
+    templates = exports;
+    return exports;
+  });
+
+  var guestlist = function (_Component) {
+    babelHelpers.inherits(guestlist, _Component);
+
+    function guestlist() {
+      babelHelpers.classCallCheck(this, guestlist);
+      return babelHelpers.possibleConstructorReturn(this, (guestlist.__proto__ || Object.getPrototypeOf(guestlist)).apply(this, arguments));
+    }
+
+    return guestlist;
+  }(Component);
+
+  Soy.register(guestlist, templates);
+  this['metalNamed']['index'] = this['metalNamed']['index'] || {};
+  this['metalNamed']['index']['guestlist'] = guestlist;
+  this['metalNamed']['index']['templates'] = templates;
+  this['metal']['index'] = templates;
+  /* jshint ignore:end */
+}).call(this);
+'use strict';
+
+(function () {
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+  var templates = this['metal']['index'];
+
+  var guestlist = function (_Component) {
+    babelHelpers.inherits(guestlist, _Component);
+
+    function guestlist() {
+      babelHelpers.classCallCheck(this, guestlist);
+      return babelHelpers.possibleConstructorReturn(this, (guestlist.__proto__ || Object.getPrototypeOf(guestlist)).apply(this, arguments));
+    }
+
+    return guestlist;
+  }(Component);
+
+  ;
+
+  Soy.register(guestlist, templates);
+
+  this['metal']['guestlist'] = guestlist;
+}).call(this);
+'use strict';
+
+(function () {
+  /* jshint ignore:start */
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+
+  var templates;
+  goog.loadModule(function (exports) {
+
+    // This file was automatically generated from index.soy.
     // Please don't edit this file by hand.
 
     /**
@@ -21932,10 +22111,10 @@ babelHelpers;
      */
     function $render(opt_data, opt_ignored, opt_ijData) {
       opt_data = opt_data || {};
-      var param28 = function param28() {
+      var param35 = function param35() {
         $login(null, null, opt_ijData);
       };
-      $templateAlias1(soy.$$assignDefaults({ content: param28 }, opt_data), null, opt_ijData);
+      $templateAlias1(soy.$$assignDefaults({ content: param35 }, opt_data), null, opt_ijData);
     }
     exports.render = $render;
     if (goog.DEBUG) {
@@ -21985,7 +22164,7 @@ babelHelpers;
       ie_close('div');
       ie_close('div');
       ie_void('footer');
-      ie_void('script', null, null, 'src', 'js/login.js');
+      ie_void('script', null, null, 'src', '/js/login.js');
     }
     exports.login = $login;
     if (goog.DEBUG) {
@@ -22012,10 +22191,10 @@ babelHelpers;
   }(Component);
 
   Soy.register(login, templates);
-  this['metalNamed']['login'] = this['metalNamed']['login'] || {};
-  this['metalNamed']['login']['login'] = login;
-  this['metalNamed']['login']['templates'] = templates;
-  this['metal']['login'] = templates;
+  this['metalNamed']['index'] = this['metalNamed']['index'] || {};
+  this['metalNamed']['index']['login'] = login;
+  this['metalNamed']['index']['templates'] = templates;
+  this['metal']['index'] = templates;
   /* jshint ignore:end */
 }).call(this);
 'use strict';
@@ -22023,7 +22202,7 @@ babelHelpers;
 (function () {
   var Component = this['metal']['component'];
   var Soy = this['metal']['Soy'];
-  var templates = this['metal']['login'];
+  var templates = this['metal']['index'];
 
   var login = function (_Component) {
     babelHelpers.inherits(login, _Component);
@@ -22052,186 +22231,7 @@ babelHelpers;
   var templates;
   goog.loadModule(function (exports) {
 
-    // This file was automatically generated from mojo.soy.
-    // Please don't edit this file by hand.
-
-    /**
-     * @fileoverview Templates in namespace mojo.
-     * @public
-     */
-
-    goog.module('mojo.incrementaldom');
-
-    /** @suppress {extraRequire} */
-    var soy = goog.require('soy');
-    /** @suppress {extraRequire} */
-    var soydata = goog.require('soydata');
-    /** @suppress {extraRequire} */
-    goog.require('goog.i18n.bidi');
-    /** @suppress {extraRequire} */
-    goog.require('goog.asserts');
-    /** @suppress {extraRequire} */
-    goog.require('goog.string');
-    var IncrementalDom = goog.require('incrementaldom');
-    var ie_open = IncrementalDom.elementOpen;
-    var ie_close = IncrementalDom.elementClose;
-    var ie_void = IncrementalDom.elementVoid;
-    var ie_open_start = IncrementalDom.elementOpenStart;
-    var ie_open_end = IncrementalDom.elementOpenEnd;
-    var itext = IncrementalDom.text;
-    var iattr = IncrementalDom.attr;
-
-    var $templateAlias1 = Soy.getTemplate('main.incrementaldom', 'render');
-
-    /**
-     * @param {Object<string, *>=} opt_data
-     * @param {(null|undefined)=} opt_ignored
-     * @param {Object<string, *>=} opt_ijData
-     * @return {void}
-     * @suppress {checkTypes}
-     */
-    function $render(opt_data, opt_ignored, opt_ijData) {
-      opt_data = opt_data || {};
-      var param35 = function param35() {
-        $mojo(null, null, opt_ijData);
-      };
-      $templateAlias1(soy.$$assignDefaults({ content: param35 }, opt_data), null, opt_ijData);
-    }
-    exports.render = $render;
-    if (goog.DEBUG) {
-      $render.soyTemplateName = 'mojo.render';
-    }
-
-    /**
-     * @param {Object<string, *>=} opt_data
-     * @param {(null|undefined)=} opt_ignored
-     * @param {Object<string, *>=} opt_ijData
-     * @return {void}
-     * @suppress {checkTypes}
-     */
-    function $mojo(opt_data, opt_ignored, opt_ijData) {
-      ie_open('div', null, null, 'class', 'mojo');
-      ie_open('div', null, null, 'class', 'container container-fluid');
-      ie_open('form', null, null, 'id', 'section-container');
-      ie_open('h2');
-      itext('GUEST LIST');
-      ie_close('h2');
-      ie_open('table', null, null, 'class', ' table');
-      ie_open('thead');
-      ie_open('th', null, null, 'class', 'first-name');
-      itext('First');
-      ie_close('th');
-      ie_open('th', null, null, 'class', 'last-name');
-      itext('Last');
-      ie_close('th');
-      ie_open('th', null, null, 'class', 'email');
-      itext('Email');
-      ie_close('th');
-      ie_open('th', null, null, 'class', 'attending');
-      itext('Attending');
-      ie_close('th');
-      ie_open('th', null, null, 'class', 'message');
-      itext('Message');
-      ie_close('th');
-      ie_close('thead');
-      ie_void('tbody', null, null, 'class', 'rsvpList');
-      ie_close('table');
-      ie_close('form');
-      ie_close('div');
-      ie_close('div');
-      ie_void('footer');
-      ie_void('script', null, null, 'src', 'js/mojo.js');
-    }
-    exports.mojo = $mojo;
-    if (goog.DEBUG) {
-      $mojo.soyTemplateName = 'mojo.mojo';
-    }
-
-    exports.render.params = [];
-    exports.render.types = {};
-    exports.mojo.params = [];
-    exports.mojo.types = {};
-    templates = exports;
-    return exports;
-  });
-
-  var mojo = function (_Component) {
-    babelHelpers.inherits(mojo, _Component);
-
-    function mojo() {
-      babelHelpers.classCallCheck(this, mojo);
-      return babelHelpers.possibleConstructorReturn(this, (mojo.__proto__ || Object.getPrototypeOf(mojo)).apply(this, arguments));
-    }
-
-    return mojo;
-  }(Component);
-
-  Soy.register(mojo, templates);
-  this['metalNamed']['mojo'] = this['metalNamed']['mojo'] || {};
-  this['metalNamed']['mojo']['mojo'] = mojo;
-  this['metalNamed']['mojo']['templates'] = templates;
-  this['metal']['mojo'] = templates;
-  /* jshint ignore:end */
-}).call(this);
-'use strict';
-
-(function () {
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-  var templates = this['metal']['mojo'];
-
-  var mojo = function (_Component) {
-    babelHelpers.inherits(mojo, _Component);
-
-    function mojo() {
-      babelHelpers.classCallCheck(this, mojo);
-      return babelHelpers.possibleConstructorReturn(this, (mojo.__proto__ || Object.getPrototypeOf(mojo)).apply(this, arguments));
-    }
-
-    return mojo;
-  }(Component);
-
-  ;
-
-  Soy.register(mojo, templates);
-
-  this['metal']['mojo'] = mojo;
-}).call(this);
-'use strict';
-
-(function () {
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-  var templates = this['metal']['index'];
-
-  var pageIndex = function (_Component) {
-    babelHelpers.inherits(pageIndex, _Component);
-
-    function pageIndex() {
-      babelHelpers.classCallCheck(this, pageIndex);
-      return babelHelpers.possibleConstructorReturn(this, (pageIndex.__proto__ || Object.getPrototypeOf(pageIndex)).apply(this, arguments));
-    }
-
-    return pageIndex;
-  }(Component);
-
-  ;
-
-  Soy.register(pageIndex, templates);
-
-  this['metal']['pageIndex'] = pageIndex;
-}).call(this);
-'use strict';
-
-(function () {
-  /* jshint ignore:start */
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-
-  var templates;
-  goog.loadModule(function (exports) {
-
-    // This file was automatically generated from rsvp.soy.
+    // This file was automatically generated from index.soy.
     // Please don't edit this file by hand.
 
     /**
@@ -22297,14 +22297,14 @@ babelHelpers;
       ie_open('form', null, null, 'class', 'rsvp-form', 'method', 'post');
       ie_open('div', null, null, 'class', 'form-group');
       ie_open('div', null, null, 'class', 'row');
-      ie_open('label', null, null, 'class', 'col-md-12 col-sm-6');
+      ie_open('label');
       itext('Full Name');
       ie_close('label');
       ie_close('div');
       ie_open('div', null, null, 'class', 'row');
-      ie_open('input', null, null, 'type', 'text', 'class', 'col-sm-8', 'id', 'first_name', 'name', 'first_name', 'placeholder', 'First');
+      ie_open('input', null, null, 'type', 'text', 'id', 'first_name', 'name', 'first_name', 'placeholder', 'First');
       ie_close('input');
-      ie_open('input', null, null, 'type', 'text', 'class', 'col-sm-6', 'id', 'last_name', 'name', 'last_name', 'placeholder', 'Last');
+      ie_open('input', null, null, 'type', 'text', 'id', 'last_name', 'name', 'last_name', 'placeholder', 'Last');
       ie_close('input');
       ie_close('div');
       ie_close('div');
@@ -22324,18 +22324,22 @@ babelHelpers;
       itext('Will you be coming?');
       ie_close('label');
       ie_open('div', null, null, 'class', 'row');
-      ie_open('input', null, null, 'type', 'radio', 'name', 'attend', 'id', 'accept', 'value', 'Yes', 'onclick', 'toggle-visibility(\'attending-show\');', 'placeholder', 'yes', 'checked', '');
+      ie_open('div', null, null, 'class', 'vertical-align');
+      ie_open('input', null, null, 'type', 'radio', 'name', 'attend', 'id', 'accept', 'value', 'Yes', 'checked', '');
       ie_close('input');
-      ie_open('label', null, null, 'class', 'sublabel');
+      ie_open('label', null, null, 'class', 'sublabel', 'for', 'accept');
       itext('Joyfully Accept');
       ie_close('label');
       ie_close('div');
+      ie_close('div');
       ie_open('div', null, null, 'class', 'row');
-      ie_open('input', null, null, 'type', 'radio', 'name', 'attend', 'id', 'decline', 'value', 'No', 'onclick', 'toggle-visibility(\'attending-hide\');');
+      ie_open('div', null, null, 'class', 'vertical-align');
+      ie_open('input', null, null, 'type', 'radio', 'name', 'attend', 'id', 'decline', 'value', 'No');
       ie_close('input');
-      ie_open('label', null, null, 'class', 'sublabel');
+      ie_open('label', null, null, 'class', 'sublabel', 'for', 'decline');
       itext('Regretfully decline');
       ie_close('label');
+      ie_close('div');
       ie_close('div');
       ie_close('div');
       ie_open('div', null, null, 'class', 'form-group');
@@ -22344,8 +22348,8 @@ babelHelpers;
       itext('How many will be coming with you?');
       ie_close('label');
       ie_close('div');
-      ie_open('div', null, null, 'class', 'row');
-      ie_open('input', null, null, 'class', 'number', 'type', 'text', 'placeholder', '0', 'name', 'guest_count', 'maxlength', '1', 'oninput', 'this.value=this.value.replace(/[^0-9]/g,\'\');');
+      ie_open('div', null, null, 'class', 'row flex-row');
+      ie_open('input', null, null, 'class', 'number', 'type', 'number', 'min', '0', 'max', '9', 'placeholder', '0', 'name', 'guest_count');
       ie_close('input');
       ie_close('div');
       ie_close('div');
@@ -22353,15 +22357,15 @@ babelHelpers;
       ie_open('label');
       itext('Do you, or anyone in your group, have dietary restrictions?');
       ie_close('label');
-      ie_open('div', null, null, 'class', 'row');
-      ie_open('input', null, null, 'class', 'number', 'type', 'text', 'name', 'gluten', 'placeholder', '0', 'maxlength', '1', 'oninput', 'this.value=this.value.replace(/[^0-9]/g,\'\');');
+      ie_open('div', null, null, 'class', 'row flex-row');
+      ie_open('input', null, null, 'class', 'number', 'type', 'number', 'min', '0', 'max', '9', 'name', 'gluten', 'placeholder', '0', 'maxlength', '1');
       ie_close('input');
       ie_open('label', null, null, 'class', 'sublabel');
       itext('Gluten-Free');
       ie_close('label');
       ie_close('div');
-      ie_open('div', null, null, 'class', 'row');
-      ie_open('input', null, null, 'class', 'number', 'type', 'text', 'name', 'dairy', 'placeholder', '0', 'maxlength', '1', 'oninput', 'this.value=this.value.replace(/[^0-9]/g,\'\');');
+      ie_open('div', null, null, 'class', 'row flex-row');
+      ie_open('input', null, null, 'class', 'number', 'type', 'number', 'min', '0', 'max', '9', 'name', 'dairy', 'placeholder', '0', 'maxlength', '1');
       ie_close('input');
       ie_open('label', null, null, 'class', 'sublabel');
       itext('Dairy-Free');
@@ -22392,7 +22396,7 @@ babelHelpers;
       ie_close('div');
       ie_close('div');
       ie_void('footer');
-      ie_void('script', null, null, 'src', 'js/rsvp.js');
+      ie_void('script', null, null, 'src', '/js/rsvp.js');
     }
     exports.rsvp = $rsvp;
     if (goog.DEBUG) {
@@ -22419,10 +22423,10 @@ babelHelpers;
   }(Component);
 
   Soy.register(rsvp, templates);
-  this['metalNamed']['rsvp'] = this['metalNamed']['rsvp'] || {};
-  this['metalNamed']['rsvp']['rsvp'] = rsvp;
-  this['metalNamed']['rsvp']['templates'] = templates;
-  this['metal']['rsvp'] = templates;
+  this['metalNamed']['index'] = this['metalNamed']['index'] || {};
+  this['metalNamed']['index']['rsvp'] = rsvp;
+  this['metalNamed']['index']['templates'] = templates;
+  this['metal']['index'] = templates;
   /* jshint ignore:end */
 }).call(this);
 'use strict';
@@ -22430,7 +22434,7 @@ babelHelpers;
 (function () {
   var Component = this['metal']['component'];
   var Soy = this['metal']['Soy'];
-  var templates = this['metal']['rsvp'];
+  var templates = this['metal']['index'];
 
   var rsvp = function (_Component) {
     babelHelpers.inherits(rsvp, _Component);

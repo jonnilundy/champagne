@@ -2,8 +2,6 @@
 
 // DATA //
 
-var DOMAIN = window.location.hostname.split(".").slice(-3).join(".");
-
 var form = document.querySelector('.rsvp-form');
 
 form.addEventListener('submit', function(e) {
@@ -23,7 +21,7 @@ form.addEventListener('submit', function(e) {
 	}
 
 WeDeploy
-	.data(`data.${DOMAIN}`)
+	.data(`data.jonathan-and-marissa.wedeploy.io`)
     .create('rsvp', formValues)
 		.then(function(response) {
 			form.reset();
@@ -44,9 +42,9 @@ WeDeploy
 	'<br/>' + "With love,<br/>" + "The Lundys";
 
 	WeDeploy
-		.url(`email.${DOMAIN}/emails`)
-		.auth('dummyToken')
-		.form('from',  'jelundy@me.com')
+		.url(`email.jonathan-and-marissa.wedeploy.io/emails`)
+		.auth('a39314c1-4fd5-41c1-805f-2c34fea896de')
+		.form('from',  'noreply@acupofmojo.com')
 		.form('to', form.email.value)
 		.form('subject', "We can't wait!!")
 		.form('message', message )
@@ -57,7 +55,7 @@ WeDeploy
 				form.reset();
 
 				alert('Yay! Thanks for RSVPing, it truly means the world to us!');
-
+				document.location.href = '/'
 				console.info('Email ID:', response.body());
 			}
 			else {

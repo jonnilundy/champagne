@@ -1,0 +1,103 @@
+---
+description: "Let us know if you can come!"
+title: "RSVP"
+---
+
+{namespace rsvp}
+
+/**
+ * 
+ */
+{template .render}
+	{call main.render data="all"}
+		{param content kind="html"}
+			{call .rsvp /}
+		{/param}
+	{/call}
+{/template}
+
+/**
+ * 
+ */
+{template .rsvp}
+	<div class="rsvp">
+		<div class="container container-fluid">
+			<h2>Please RSVP by March 30, 2017</h2>
+			<form class="rsvp-form" method="post">
+				<div class="form-group">
+					<div class="row">
+						<label>Full Name</label>
+					</div>
+					<div class="row">
+						<input type="text" id="first_name" name="first_name" placeholder="First">
+						<input type="text" id="last_name" name="last_name" placeholder="Last">
+					</div>
+				</div>
+
+				<div class="form-group">
+					<div class="row">
+						<label>Email Address</label>
+					</div>
+					<div class="row">
+						<input type="email" id="email" name="email" placeholder="yourname@email.com">
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label>Will you be coming?</label>
+					<div class="row">
+						<div class="vertical-align">
+							<input type="radio" name="attend" id="accept" value="Yes" checked>
+							<label class="sublabel" for="accept">Joyfully Accept</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="vertical-align">
+							<input type="radio" name="attend" id="decline" value="No">
+							<label class="sublabel" for="decline">Regretfully decline</label>	
+						</div>
+					</div>		
+				</div>
+
+				<div class="form-group">
+					<div class="row">
+						<label>How many will be coming with you?</label>
+					</div>
+					<div class="row flex-row">
+						<input class="number" type="number" min="0" max="9" placeholder="0" name="guest_count">
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label>Do you, or anyone in your group, have dietary restrictions?</label>
+						<div class="row flex-row">
+							<input class="number" type="number" min="0" max="9" name="gluten" placeholder="0" maxlength="1">
+							<label class="sublabel">Gluten-Free</label>
+						</div>
+						<div class="row flex-row">
+							<input class="number" type="number" min="0" max="9" name="dairy" placeholder="0" maxlength="1">
+							<label class="sublabel">Dairy-Free</label>
+						</div>
+				</div>
+
+				<div class="form-group">
+					<div class="row">
+						<label>What's your favorite dance song?</label>
+					</div>
+					<div class="row">
+						<input type="text" id="song_name" name="song_name" placeholder="Song">
+					</div>
+					<div class="row">
+						<input type="text" id="song_artist" name="song_artist" placeholder="Artist">
+					</div>
+				</div>
+
+				<div id="submit">
+					<button type="submit">Submit</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<footer></footer>
+	<script src="/js/rsvp.js"></script>
+{/template}

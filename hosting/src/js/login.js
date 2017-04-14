@@ -1,9 +1,8 @@
 'use strict';
 
-var DOMAIN = window.location.hostname.split(".").slice(-3).join(".");
+var auth = WeDeploy.auth('auth.jonathan-and-marissa.wedeploy.io');
 
-var auth = WeDeploy.auth(`auth.${DOMAIN}`);
-
+if (auth.currentUser) {document.location.href = '/guestlist';}
 
 var popup = document.getElementById('popup');
 
@@ -30,13 +29,13 @@ function closeAlert() {
 }
 
 auth.onSignIn((user) => {
-  document.location.href = '/mojo.html';
+  document.location.href = '/guestlist';
 });
 
 function signOut() {
   auth
     .signOut()
     .then(() => {
-      location.href = '/login.html';
+      location.href = '/login';
     });
 }

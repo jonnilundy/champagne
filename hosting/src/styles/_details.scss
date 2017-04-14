@@ -1,16 +1,31 @@
 .details {
 	h2 {
-		font-size: 35px;
-		margin-bottom: 30px;
+		font-size: 18px;
+		margin: 20px;
 		line-height: normal;
+		
+		@media (min-width: $medium) {
+			font-size: 27px;
+		}
+
 		&.detail-sub {
 			font-family: $font-family-cursive;
+			font-size: 36px;
+			color: rgba($primary, .5);
+			@media (min-width: $medium) {
+				font-size: 50px;
+			}
 		}
 	}
 
 	p {
-		font-size: 22px;
-		padding: 10px 0;
+		font-family: $font-family-sans;
+		font-size: 18px;
+		padding: 0;
 		line-height: 35px;
+		margin: 20px;
+		@media (min-width: $medium) {
+			font-size: 27px;
+		}
 	}
 }
