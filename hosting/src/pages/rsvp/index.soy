@@ -44,6 +44,15 @@ title: "RSVP"
 				</div>
 
 				<div class="form-group">
+					<div class="row">
+						<label>Mailing Address</label>
+					</div>
+					<div class="row">
+						<input type="text" id="address" name="address" placeholder="Enter your address">
+					</div>
+				</div>
+
+				<div class="form-group">
 					<label>Will you be coming?</label>
 					<div class="row">
 						<div class="vertical-align">
@@ -64,18 +73,18 @@ title: "RSVP"
 						<label>How many will be coming with you?</label>
 					</div>
 					<div class="row flex-row">
-						<input class="number" type="number" min="0" max="9" placeholder="0" name="guest_count">
+						<input class="number" type="number" maxlength="1" name="plus_one" placeholder="0" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
 					</div>
 				</div>
 
 				<div class="form-group">
 					<label>Do you, or anyone in your group, have dietary restrictions?</label>
 						<div class="row flex-row">
-							<input class="number" type="number" min="0" max="9" name="gluten" placeholder="0" maxlength="1">
+							<input class="number" type="number" maxlength="1" name="gluten" placeholder="0" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
 							<label class="sublabel">Gluten-Free</label>
 						</div>
 						<div class="row flex-row">
-							<input class="number" type="number" min="0" max="9" name="dairy" placeholder="0" maxlength="1">
+							<input class="number" type="number" maxlength="1" name="dairy" placeholder="0" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
 							<label class="sublabel">Dairy-Free</label>
 						</div>
 				</div>
@@ -85,10 +94,10 @@ title: "RSVP"
 						<label>What's your favorite dance song?</label>
 					</div>
 					<div class="row">
-						<input type="text" id="song_name" name="song_name" placeholder="Song">
+						<input type="text" id="song_name" name="song" placeholder="Song">
 					</div>
 					<div class="row">
-						<input type="text" id="song_artist" name="song_artist" placeholder="Artist">
+						<input type="text" id="song_artist" name="artist" placeholder="Artist">
 					</div>
 				</div>
 
@@ -99,5 +108,6 @@ title: "RSVP"
 		</div>
 	</div>
 	<footer></footer>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzMvT31kHkv-d_vRgHFihh0nQORgTOWCw&libraries=places&callback=initAutocomplete"async defer></script>
 	<script src="/js/rsvp.js"></script>
 {/template}
