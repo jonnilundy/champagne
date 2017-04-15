@@ -38,7 +38,7 @@ form.addEventListener('submit', function(e) {
 
 WeDeploy
 	.data(`data.jonathan-and-marissa.wedeploy.io`)
-    .create('rsvp', formValues)
+    .create('guestList', formValues)
 		.then(function(response) {
 			form.reset();
 			console.info('Saved:', response);

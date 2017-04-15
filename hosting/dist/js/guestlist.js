@@ -17,7 +17,7 @@ var rsvpList = document.querySelector('.rsvpList');
 WeDeploy
   .data('data.jonathan-and-marissa.wedeploy.io')
   .orderBy('createdAt')
-  .get('rsvp')
+  .get('guestList')
 	.then(function(response) {
 		appendRsvp(response);
 	})

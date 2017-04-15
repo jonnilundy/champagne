@@ -21959,10 +21959,10 @@ babelHelpers;
      */
     function $render(opt_data, opt_ignored, opt_ijData) {
       opt_data = opt_data || {};
-      var param35 = function param35() {
+      var param28 = function param28() {
         $guestlist(null, null, opt_ijData);
       };
-      $templateAlias1(soy.$$assignDefaults({ content: param35 }, opt_data), null, opt_ijData);
+      $templateAlias1(soy.$$assignDefaults({ content: param28 }, opt_data), null, opt_ijData);
     }
     exports.render = $render;
     if (goog.DEBUG) {
@@ -22114,10 +22114,10 @@ babelHelpers;
      */
     function $render(opt_data, opt_ignored, opt_ijData) {
       opt_data = opt_data || {};
-      var param28 = function param28() {
+      var param35 = function param35() {
         $login(null, null, opt_ijData);
       };
-      $templateAlias1(soy.$$assignDefaults({ content: param28 }, opt_data), null, opt_ijData);
+      $templateAlias1(soy.$$assignDefaults({ content: param35 }, opt_data), null, opt_ijData);
     }
     exports.render = $render;
     if (goog.DEBUG) {
