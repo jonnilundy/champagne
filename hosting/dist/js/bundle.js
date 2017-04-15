@@ -21838,14 +21838,17 @@ babelHelpers;
       ie_open('h2', null, null, 'class', 'detail-sub');
       itext('June 10th, 2017');
       ie_close('h2');
+      ie_open('p', null, null, 'class', 'date');
       ie_open('a', null, null, 'href', 'https://goo.gl/u2Bdjh');
-      ie_open('p');
       itext('20711 E Mesarica Rd');
       ie_open('br');
       ie_close('br');
       itext('Covina, CA 91724');
-      ie_close('p');
       ie_close('a');
+      ie_close('p');
+      ie_open('p', null, null, 'class', 'click');
+      itext('Click address above for map');
+      ie_close('p');
       ie_close('div');
       ie_close('div');
       ie_close('div');
@@ -21956,10 +21959,10 @@ babelHelpers;
      */
     function $render(opt_data, opt_ignored, opt_ijData) {
       opt_data = opt_data || {};
-      var param28 = function param28() {
+      var param35 = function param35() {
         $guestlist(null, null, opt_ijData);
       };
-      $templateAlias1(soy.$$assignDefaults({ content: param28 }, opt_data), null, opt_ijData);
+      $templateAlias1(soy.$$assignDefaults({ content: param35 }, opt_data), null, opt_ijData);
     }
     exports.render = $render;
     if (goog.DEBUG) {
@@ -22111,10 +22114,10 @@ babelHelpers;
      */
     function $render(opt_data, opt_ignored, opt_ijData) {
       opt_data = opt_data || {};
-      var param35 = function param35() {
+      var param28 = function param28() {
         $login(null, null, opt_ijData);
       };
-      $templateAlias1(soy.$$assignDefaults({ content: param35 }, opt_data), null, opt_ijData);
+      $templateAlias1(soy.$$assignDefaults({ content: param28 }, opt_data), null, opt_ijData);
     }
     exports.render = $render;
     if (goog.DEBUG) {
@@ -22320,6 +22323,17 @@ babelHelpers;
       ie_close('div');
       ie_close('div');
       ie_open('div', null, null, 'class', 'form-group');
+      ie_open('div', null, null, 'class', 'row');
+      ie_open('label');
+      itext('Mailing Address');
+      ie_close('label');
+      ie_close('div');
+      ie_open('div', null, null, 'class', 'row');
+      ie_open('input', null, null, 'type', 'text', 'id', 'address', 'name', 'address', 'placeholder', 'Enter your address');
+      ie_close('input');
+      ie_close('div');
+      ie_close('div');
+      ie_open('div', null, null, 'class', 'form-group');
       ie_open('label');
       itext('Will you be coming?');
       ie_close('label');
@@ -22349,7 +22363,7 @@ babelHelpers;
       ie_close('label');
       ie_close('div');
       ie_open('div', null, null, 'class', 'row flex-row');
-      ie_open('input', null, null, 'class', 'number', 'type', 'number', 'min', '0', 'max', '9', 'placeholder', '0', 'name', 'guest_count');
+      ie_open('input', null, null, 'class', 'number', 'type', 'number', 'maxlength', '1', 'name', 'plus_one', 'placeholder', '0', 'oninput', 'javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);');
       ie_close('input');
       ie_close('div');
       ie_close('div');
@@ -22358,14 +22372,14 @@ babelHelpers;
       itext('Do you, or anyone in your group, have dietary restrictions?');
       ie_close('label');
       ie_open('div', null, null, 'class', 'row flex-row');
-      ie_open('input', null, null, 'class', 'number', 'type', 'number', 'min', '0', 'max', '9', 'name', 'gluten', 'placeholder', '0', 'maxlength', '1');
+      ie_open('input', null, null, 'class', 'number', 'type', 'number', 'maxlength', '1', 'name', 'gluten', 'placeholder', '0', 'oninput', 'javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);');
       ie_close('input');
       ie_open('label', null, null, 'class', 'sublabel');
       itext('Gluten-Free');
       ie_close('label');
       ie_close('div');
       ie_open('div', null, null, 'class', 'row flex-row');
-      ie_open('input', null, null, 'class', 'number', 'type', 'number', 'min', '0', 'max', '9', 'name', 'dairy', 'placeholder', '0', 'maxlength', '1');
+      ie_open('input', null, null, 'class', 'number', 'type', 'number', 'maxlength', '1', 'name', 'dairy', 'placeholder', '0', 'oninput', 'javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);');
       ie_close('input');
       ie_open('label', null, null, 'class', 'sublabel');
       itext('Dairy-Free');
@@ -22379,11 +22393,11 @@ babelHelpers;
       ie_close('label');
       ie_close('div');
       ie_open('div', null, null, 'class', 'row');
-      ie_open('input', null, null, 'type', 'text', 'id', 'song_name', 'name', 'song_name', 'placeholder', 'Song');
+      ie_open('input', null, null, 'type', 'text', 'id', 'song_name', 'name', 'song', 'placeholder', 'Song');
       ie_close('input');
       ie_close('div');
       ie_open('div', null, null, 'class', 'row');
-      ie_open('input', null, null, 'type', 'text', 'id', 'song_artist', 'name', 'song_artist', 'placeholder', 'Artist');
+      ie_open('input', null, null, 'type', 'text', 'id', 'song_artist', 'name', 'artist', 'placeholder', 'Artist');
       ie_close('input');
       ie_close('div');
       ie_close('div');
@@ -22396,6 +22410,7 @@ babelHelpers;
       ie_close('div');
       ie_close('div');
       ie_void('footer');
+      ie_void('script', null, null, 'src', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyAzMvT31kHkv-d_vRgHFihh0nQORgTOWCw&libraries=places&callback=initAutocomplete', 'async', '', 'defer', '');
       ie_void('script', null, null, 'src', '/js/rsvp.js');
     }
     exports.rsvp = $rsvp;

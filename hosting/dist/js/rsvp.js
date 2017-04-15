@@ -1,4 +1,19 @@
+// MAX LENGTH
 
+function lengthLimit() {
+	if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);
+}
+
+
+// GOOGLE MAPS
+
+var autocomplete;
+
+function initAutocomplete() {
+  autocomplete = new google.maps.places.Autocomplete(
+    (document.getElementById('address')),
+      {types: ['geocode']});
+}
 
 // DATA //
 
@@ -12,12 +27,13 @@ form.addEventListener('submit', function(e) {
 		first_name: form.first_name.value,
 		last_name: form.last_name.value,
 		email: form.email.value,
-		// attend: form.attend.value,
-		// party: form.guest_count.value,
-		// gluten_free: form.gluten.value,
-		// dairy_free: form.dairy.value,
-		// song: form.song_name.value,
-		// artist: form.artist_name.value
+		address: form.address.value,
+		attend: form.attend.value,
+		plus_one: form.plus_one.value,
+		gluten: form.gluten.value,
+		dairy: form.dairy.value,
+		song: form.song.value,
+		artist: form.artist.value
 	}
 
 WeDeploy
@@ -25,7 +41,6 @@ WeDeploy
     .create('rsvp', formValues)
 		.then(function(response) {
 			form.reset();
-			form.email.focus();
 			console.info('Saved:', response);
 		})
 		.catch(function(error) {
