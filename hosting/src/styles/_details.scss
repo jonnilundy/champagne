@@ -11,7 +11,7 @@
 		&.detail-sub {
 			font-family: $font-family-cursive;
 			font-size: 36px;
-			color: rgba($primary, .5);
+			color: rgba($primary, .7);
 			@media (min-width: $medium) {
 				font-size: 50px;
 			}
@@ -19,13 +19,33 @@
 	}
 
 	p {
-		font-family: $font-family-sans;
-		font-size: 18px;
-		padding: 0;
-		line-height: 35px;
-		margin: 20px;
-		@media (min-width: $medium) {
-			font-size: 27px;
+		&.date {
+			font-family: $font-family-sans;
+			font-size: 18px;
+			padding: 0;
+			line-height: 35px;
+			margin: 20px;
+			transition: .33s;
+
+			&:hover {
+				color: rgba($primary, .7);
+			}
+			@media (min-width: $medium) {
+				font-size: 27px;
+			}
+		}
+
+		&.click {
+			font-family: $font-family-sans;
+			font-size: 8px;
+			line-height: 8px;
+			margin-top: 0;
+			padding-top: 0;
+
+			@media (min-width: $medium) {
+				font-size: 12px;
+				line-height: 10px;
+			}
 		}
 	}
 }
