@@ -1,7 +1,7 @@
 [
 	{
 		"description": "Posts submission of RSVP form",
-		"path": "/rsvp/*",
+		"path": "/guestList/*",
 		"method": "POST",
 		"data": true,
 		"parameters": {
@@ -44,7 +44,7 @@
 	},
 	{
 		"description": "Fetches form submissions",
-		"path": "/rsvp/*",
+		"path": "/guestList/*",
 		"method": ["GET", "PATCH", "PUT", "DELETE"],
 		"data": true,
 		"auth": {
