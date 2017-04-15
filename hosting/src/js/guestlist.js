@@ -16,7 +16,7 @@ var rsvpList = document.querySelector('.rsvpList');
 
 WeDeploy
   .data('data.jonathan-and-marissa.wedeploy.io')
-  .orderBy('last_name')
+  .orderBy('createdAt')
   .get('rsvp')
 	.then(function(response) {
 		appendRsvp(response);
@@ -34,7 +34,9 @@ function appendRsvp(rsvp) {
 			'<td class="last_name">'+guest.last_name+'</td>' +
 			'<td class="email">'+guest.email+'</td>' +
 			'<td class="attending">'+guest.attend+'</td>' +
-			'<td class="message">'+guest.message+'</td>' +
+			'<td class="plus_one">'+guest.plus_one+'</td>' +
+			'<td class="gluten">'+guest.gluten+'</td>' +
+			'<td class="dairy">'+guest.dairy+'</td>' +
 			'<tr>'
 	});
 
