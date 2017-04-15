@@ -17,36 +17,27 @@
 				"type": "string",
 				"required": "true"
 			},
-			"street": {
+			"address": {
 				"type": "string",
 				"required": "true"
 			},
-			"city": {
-				"type": "string",
-				"required": "true"
-			},
-			"state": {
-				"type": "string",
-				"required": "true"
-			},
-			"zip": {
-				"type": "number",
-				"required": "true"
-			},
-			"Attending": {
+			"attend": {
 				"type": "boolean",
 				"required": "true"
 			},
-			"dairy": {
-				"type": "boolean"
+			"plus_one": {
+				"type": "number"
 			},
 			"gluten": {
-				"type": "boolean"
+				"type": "number"
+			},
+			"dairy": {
+				"type": "number"
 			},
 			"song": {
 				"type": "string"
 			},
-			"artist": {
+			"song": {
 				"type": "string"
 			}
 		}
