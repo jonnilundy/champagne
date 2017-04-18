@@ -1,6 +1,6 @@
 [
 	{
-		"path": "/rsvp/*",
+		"path": "/*",
 		"data": true
 	}
 ]
