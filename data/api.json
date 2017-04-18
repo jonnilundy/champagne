@@ -1,54 +1,6 @@
 [
 	{
-		"description": "Posts submission of RSVP form",
-		"path": "/guestList/*",
-		"method": "POST",
-		"data": true,
-		"parameters": {
-			"first_name": {
-				"type": "string",
-				"required": "true"
-			},
-			"last_name": {
-				"type": "string",
-				"required": "true"
-			},
-			"email": {
-				"type": "string",
-				"required": "true"
-			},
-			"address": {
-				"type": "string",
-				"required": "true"
-			},
-			"attend": {
-				"type": "boolean",
-				"required": "true"
-			},
-			"plus_one": {
-				"type": "number"
-			},
-			"gluten": {
-				"type": "number"
-			},
-			"dairy": {
-				"type": "number"
-			},
-			"song": {
-				"type": "string"
-			},
-			"song": {
-				"type": "string"
-			}
-		}
-	},
-	{
-		"description": "Fetches form submissions",
-		"path": "/guestList/*",
-		"method": ["GET", "PATCH", "PUT", "DELETE"],
-		"data": true,
-		"auth": {
-			"validator": "$auth != null"
-		}
+		"path": "/rsvp/*",
+		"data": true
 	}
 ]

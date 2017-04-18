@@ -3,7 +3,7 @@
 
 // AUTH //
 
-var auth = WeDeploy.auth('auth.jonathan-and-marissa.wedeploy.io');
+var auth = WeDeploy.auth('auth.jonathan-and-marissa.wedeploy.me');
 
 if (!auth.currentUser) {
   document.location.href = '/login';
@@ -16,8 +16,7 @@ var rsvpList = document.querySelector('.rsvpList');
 
 WeDeploy
   .data('data.jonathan-and-marissa.wedeploy.io')
-  .orderBy('createdAt')
-  .get('guestList')
+  .get('rsvp')
 	.then(function(response) {
 		appendRsvp(response);
 	})
@@ -32,8 +31,7 @@ function appendRsvp(rsvp) {
 		guestList += '<tr>' +
 			'<td class="first_name">'+guest.first_name+'</td>' +
 			'<td class="last_name">'+guest.last_name+'</td>' +
-			'<td class="email">'+guest.email+'</td>' +
-			'<td class="attending">'+guest.attend+'</td>' +
+			'<td class="attend">'+guest.attend+'</td>' +
 			'<td class="plus_one">'+guest.plus_one+'</td>' +
 			'<td class="gluten">'+guest.gluten+'</td>' +
 			'<td class="dairy">'+guest.dairy+'</td>' +
