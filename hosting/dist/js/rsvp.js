@@ -33,7 +33,8 @@ form.addEventListener('submit', function(e) {
 		gluten: form.gluten.value,
 		dairy: form.dairy.value,
 		song: form.song.value,
-		artist: form.artist.value
+		artist: form.artist.value,
+		timestamp: new Date().toISOString()
 	}
 
 WeDeploy
