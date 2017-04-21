@@ -40,3 +40,5 @@ function appendRsvp(rsvp) {
 
 	rsvpList.innerHTML = guestList;
 }
+
+var dataConfig = WeDeploy.data('data.jonathan-and-marissa.wedeploy.io')
