@@ -58,7 +58,7 @@ WeDeploy
 
 	WeDeploy
 		.url('email.jonathan-and-marissa.wedeploy.io/emails')
-		.auth('a39314c1-4fd5-41c1-805f-2c34fea896de')
+		.auth('4b374d78-da8a-4613-bd44-47d34a484294')
 		.form('from',  'noreply@acupofmojo.com')
 		.form('to', form.email.value)
 		.form('subject', "We can't wait!!")
