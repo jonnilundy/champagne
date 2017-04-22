@@ -5,14 +5,14 @@
 @import "container";
 @import "details";
 @import "rsvp";
-@import "data-table";
+@import "guestlist";
 @import "wrapper";
 @import "footer";
 @import "login";
 
 
 .senna-loading-bar {
-	color: $secondary;
+	color: $primary;
 }
 
 body {

@@ -1,0 +1,44 @@
+@import "variables";
+
+.guestlist {
+	.table-container {
+		overflow: auto;
+	}
+
+	table {
+		color: $primary;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 35px;
+		font-family: $font-family-sans-serif;
+
+		
+		th {
+			font-weight: 700;
+			padding-top: 5px;
+			padding-bottom: 5px;
+
+			&.th-sm {
+				min-width: 70px;
+				@media (min-width: $medium) {
+					min-width: 90px;
+				}
+			}
+			&.th-lg {
+				min-width: 100px;
+				@media (min-width: $medium) {
+					min-width: 150px;
+				}
+			}
+		}
+
+		td {
+			font-weight: 300;
+			overflow: hidden;
+			max-width: 120px;
+			padding-top: 5px;
+			padding-bottom: 5px;
+		}
+
+	}
+}
