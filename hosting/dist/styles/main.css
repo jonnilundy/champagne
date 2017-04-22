@@ -192,20 +192,23 @@ a {
   line-height: 35px;
   margin: 20px;
   transition: .33s; }
-  .details p.date:hover {
-    color: rgba(255, 255, 255, 0.7); }
   @media (min-width: 648px) {
     .details p.date {
       font-size: 27px; } }
 
-.details p.click {
+.details p.copy-button {
   font-family: "Cinzel", serif;
   font-size: 8px;
   line-height: 8px;
   margin-top: 0;
   padding-top: 0; }
+  .details p.copy-button span {
+    transition: color .333s; }
+  .details p.copy-button span:hover {
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer; }
   @media (min-width: 648px) {
-    .details p.click {
+    .details p.copy-button {
       font-size: 12px;
       line-height: 10px; } }
 
@@ -355,8 +358,35 @@ a {
       font-size: 20px;
       padding: 15px 25px; } }
 
-table {
-  color: #fff; }
+.guestlist .table-container {
+  overflow: auto; }
+
+.guestlist table {
+  color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 35px;
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  .guestlist table th {
+    font-weight: 700;
+    padding-top: 5px;
+    padding-bottom: 5px; }
+    .guestlist table th.th-sm {
+      min-width: 70px; }
+      @media (min-width: 648px) {
+        .guestlist table th.th-sm {
+          min-width: 90px; } }
+    .guestlist table th.th-lg {
+      min-width: 100px; }
+      @media (min-width: 648px) {
+        .guestlist table th.th-lg {
+          min-width: 150px; } }
+  .guestlist table td {
+    font-weight: 300;
+    overflow: hidden;
+    max-width: 120px;
+    padding-top: 5px;
+    padding-bottom: 5px; }
 
 .outer-wrapper {
   top: -55px;
@@ -756,7 +786,7 @@ footer {
   align-items: center; }
 
 .senna-loading-bar {
-  color: #050500; }
+  color: #fff; }
 
 body {
   margin: 0; }
