@@ -27,25 +27,31 @@
 			margin: 20px;
 			transition: .33s;
 
-			&:hover {
-				color: rgba($primary, .7);
-			}
 			@media (min-width: $medium) {
 				font-size: 27px;
 			}
 		}
 
-		&.click {
+		&.copy-button {
 			font-family: $font-family-sans;
 			font-size: 8px;
 			line-height: 8px;
 			margin-top: 0;
 			padding-top: 0;
+			
+			span {
+				transition: color .333s;
+			}
+
+			span:hover {
+				color: rgba($primary, .7);
+				cursor: pointer;
+			}
 
 			@media (min-width: $medium) {
 				font-size: 12px;
 				line-height: 10px;
-			}
+			}	
 		}
 	}
 }
