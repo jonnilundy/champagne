@@ -1,6 +1,53 @@
 [
 	{
 		"path": "/rsvp/*",
-		"data": true
+		"data": true,
+		"method": "POST",
+		"parameter": {
+			"first_name": {
+				"type": "string",
+				"required": true
+			},
+			"last_name": {
+				"type": "string",
+				"required": true
+			},
+			"email": {
+				"type": "string",
+				"required": true
+			},
+			"address": {
+				"type": "string",
+				"required": true
+			},
+			"attend": {
+				"type": "boolean",
+				"required": true
+			},
+			"plus_one": {
+				"type": "number"
+			},
+			"gluten": {
+				"type": "number"
+			},
+			"dairy": {
+				"type": "number"
+			},
+			"song": {
+				"type": "string"
+			},
+			"timestamp": {
+				"type": "string",
+				"required": true
+			},
+		}
+	},
+	{
+		"path": "/*",
+		"data": true,
+		"method": ["GET", "PATCH", "PUT", "DELETE"],
+		"auth": {
+ 			"validator": "$auth != null"
+ 		}
 	}
 ]
