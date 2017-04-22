@@ -4,6 +4,7 @@
   "private": false,
   "repository": "jonnilundy/jonathan-and-marissa",
   "dependencies": {
+    "clipboard": "^1.6.1",
     "normalize.css": "^5.0.0"
   },
   "devDependencies": {
