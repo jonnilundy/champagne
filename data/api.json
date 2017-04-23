@@ -43,7 +43,7 @@
 		}
 	},
 	{
-		"path": "/*",
+		"path": "/rsvp/*",
 		"data": true,
 		"method": ["GET", "PATCH", "PUT", "DELETE"],
 		"auth": {
