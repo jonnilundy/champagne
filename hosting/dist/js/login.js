@@ -2,8 +2,6 @@
 
 var auth = WeDeploy.auth('auth.jonathan-and-marissa.wedeploy.io');
 
-if (auth.currentUser) {document.location.href = '/guestlist';}
-
 var popup = document.getElementById('popup');
 
 function signInWithEmailAndPassword() {
