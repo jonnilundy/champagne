@@ -34,7 +34,7 @@
 
 		&.copy-button {
 			font-family: $font-family-sans;
-			font-size: 8px;
+			font-size: 10px;
 			line-height: 8px;
 			margin-top: 0;
 			padding-top: 0;
@@ -49,7 +49,7 @@
 			}
 
 			@media (min-width: $medium) {
-				font-size: 12px;
+				font-size: 14px;
 				line-height: 10px;
 			}	
 		}
