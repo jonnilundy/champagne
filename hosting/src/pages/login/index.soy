@@ -28,27 +28,28 @@ hidden: true
 			<form name="signIn" class="form" onsubmit="signInWithEmailAndPassword(); return false;">
 
 					<div class="form-group">
-						<label>Email</label>
-						<input type="email" placeholder="youremail@company.com" class="form-control" name="email" value="" maxlength="100" autofocus="" required="" />
+						<div class="row">
+							<label>Email</label>
+						</div>
+						<div class="row">
+							<input type="email" placeholder="youremail@company.com" name="email" maxlength="100" required>
+						</div>
 					</div>
 
 					<div class="form-group">
-						<div class="col-flex-row-spacebetween-center">
+						<div class="row">
 							<label>Password</label>
 						</div>
-						<input type="password" placeholder="Password (at least 6 characters)" class="form-control" name="password" value="" maxlength="100" required="" />
+						<div class="row">
+							<input type="password" placeholder="Password (at least 6 characters)" name="password" maxlength="100" required>
+						</div>
 					</div>
 
 					<div class="btn-wrapper">
-						<button type="submit" class="btn btn-success" name="submit">Login</button>
+						<button type="submit" class="btn login" name="submit">Login</button>
 					</div>
 
 				</form>
-				
-				<button class="logout" onclick="signOut();">
-          			<span class="icon-12-leave"></span>
-         			 <div class="btn-tooltip">Sign Out</div>
-        		</button>
 		</div>
 	</div>
 	<footer></footer>
