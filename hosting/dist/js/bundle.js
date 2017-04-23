@@ -21608,14 +21608,14 @@ babelHelpers;
      */
     function $title(opt_data, opt_ignored, opt_ijData) {
       ie_open('div', null, null, 'class', 'header');
-      ie_open('a', null, null, 'href', '/');
       ie_open('h1', null, null, 'class', 'header-title');
+      ie_open('a', null, null, 'href', '/');
       itext('Jonathan & Marissa');
+      ie_close('a');
       ie_close('h1');
       ie_open('h2', null, null, 'class', 'header-desc');
       itext('are getting married!');
       ie_close('h2');
-      ie_close('a');
       ie_close('div');
     }
     exports.title = $title;
