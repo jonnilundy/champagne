@@ -39,7 +39,7 @@
 			"timestamp": {
 				"type": "string",
 				"required": true
-			},
+			}
 		}
 	},
 	{
