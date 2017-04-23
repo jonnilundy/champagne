@@ -1,15 +1,28 @@
 'use strict';
 
-
-// AUTH //
+//
+// AUTH 
+//
 
 var auth = WeDeploy.auth('auth.jonathan-and-marissa.wedeploy.io');
 
 if (!auth.currentUser) {document.location.href = '/login';}
 
-// DATA //
+function signOut() {
+  auth
+    .signOut()
+    .then(() => {
+      location.href = '/login';
+    });
+}
+
+//
+// DATA 
+//
 
 var rsvpList = document.querySelector('.rsvpList');
+
+var data = WeDeploy.data('data.jonathan-and-marissa.wedeploy.io');
 
 WeDeploy
   .data('data.jonathan-and-marissa.wedeploy.io')
@@ -37,5 +50,3 @@ function appendRsvp(rsvp) {
 
 	rsvpList.innerHTML = guestList;
 }
-
-var dataConfig = WeDeploy.data('data.jonathan-and-marissa.wedeploy.io')

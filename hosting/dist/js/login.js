@@ -29,11 +29,3 @@ function closeAlert() {
 auth.onSignIn((user) => {
   document.location.href = '/guestlist';
 });
-
-function signOut() {
-  auth
-    .signOut()
-    .then(() => {
-      location.href = '/login';
-    });
-}
