@@ -3,7 +3,7 @@
 
 // AUTH //
 
-var auth = WeDeploy.auth('auth.jonathan-and-marissa.wedeploy.me');
+var auth = WeDeploy.auth('auth.jonathan-and-marissa.wedeploy.io');
 
 if (!auth.currentUser) {
   document.location.href = '/login';
