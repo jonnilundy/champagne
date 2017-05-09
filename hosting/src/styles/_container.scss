@@ -4,7 +4,7 @@
 	margin-left: 0;
 	margin-right: 0;
 	max-width: 750px;
-	padding: 60px 20px;
+	padding: 30px 20px 30px;
 	background-color: rgba($secondary, .6);
 
 	@media (min-width: $medium) {
@@ -12,6 +12,7 @@
 		margin-right: auto;
 		padding-left: 5%;
 		padding-right: 5%;
+		padding: 80px 5%;
 		border-radius: 5px;
 	}
 
