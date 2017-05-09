@@ -42,11 +42,11 @@
 	}
 
 	button {
-	    background-color: rgba($primary,.1);
+	    background-color: rgba($secondary, 0);
 	    font-family: $font-family-sans;
-	    color: white;
-	    padding: 10px 20px;
-	    font-size: 15px;
+	    color: $primary;
+	    padding: 15px 25px;
+	    font-size: 16px;
 	    font-weight: 300;
 	    border: 1px solid $primary;
 	    border-radius: 2px;
@@ -60,7 +60,8 @@
 	    }
 
 	    &:hover {
-	      background-color: rgba($primary,.2);
+	      background-color: $secondary;
+	      background-color: rgba($secondary, 1);
 	      cursor: pointer;
 	    }
 
