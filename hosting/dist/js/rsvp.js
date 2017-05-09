@@ -34,6 +34,7 @@ form.addEventListener('submit', function(e) {
 		dairy: form.dairy.value,
 		song: form.song.value,
 		artist: form.artist.value,
+		message: form.message.value,
 		timestamp: new Date().toISOString()
 	}
 
@@ -60,7 +61,7 @@ WeDeploy
 	WeDeploy
 		.url('email.jonathan-and-marissa.wedeploy.io/emails')
 		.auth('email@wedeploy.com', 'pass')
-		.form('from',  'noreply@acupofmojo.com')
+		.form('from',  'thankyou@acupofmojo.com')
 		.form('to', form.email.value)
 		.form('subject', "We can't wait!!")
 		.form('message', message )
