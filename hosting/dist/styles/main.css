@@ -207,7 +207,8 @@ a {
   font-size: 12px;
   line-height: 8px;
   margin-top: 0;
-  padding-top: 0; }
+  padding-top: 0;
+  padding-bottom: 60px; }
   .details p.copy-button span {
     transition: color .333s; }
   .details p.copy-button span:hover {
@@ -223,6 +224,7 @@ a {
   margin: 10px 50px;
   padding: 10px;
   border-radius: 2px;
+  background: rgba(255, 255, 255, 0.7);
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1), 0px 1px 8px 0px rgba(0, 0, 0, 0.05);
   transition: box-shadow .333s; }
   @media (min-width: 648px) {
@@ -230,7 +232,7 @@ a {
       max-width: 200px;
       margin: 10px 10px; }
       .details a img:hover {
-        box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.12), 0px 3px 8px 0px rgba(0, 0, 0, 0.07); } }
+        box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.12), 0px 3px 8px 3px rgba(0, 0, 0, 0.07); } }
 
 .rsvp h2 {
   margin-bottom: 18px;
@@ -364,17 +366,18 @@ a {
   padding: 15px 25px;
   font-size: 16px;
   font-weight: 300;
-  border: 1px solid #050500;
+  border: none;
   border-radius: 2px;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.1), 0px 3px 6px 2px rgba(0, 0, 0, 0.07);
   margin-top: 26px;
   margin-bottom: 10px;
   text-align: center;
-  transition-duration: 0.4s; }
+  transition-duration: 0.333s; }
   .rsvp button:focus {
     outline: none; }
   .rsvp button:hover {
-    background-color: #fff;
-    background-color: white;
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2), 0px 3px 7px 3px rgba(0, 0, 0, 0.1);
     cursor: pointer; }
   @media (min-width: 648px) {
     .rsvp button {
@@ -418,17 +421,18 @@ a {
   padding: 15px 25px;
   font-size: 16px;
   font-weight: 300;
-  border: 1px solid #050500;
+  border: none;
   border-radius: 2px;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.1), 0px 3px 6px 2px rgba(0, 0, 0, 0.07);
   margin-top: 26px;
   margin-bottom: 10px;
   text-align: center;
-  transition-duration: 0.4s; }
+  transition-duration: 0.333s; }
   .guestlist button:focus {
     outline: none; }
   .guestlist button:hover {
-    background-color: #fff;
-    background-color: white;
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2), 0px 3px 7px 3px rgba(0, 0, 0, 0.1);
     cursor: pointer; }
   @media (min-width: 648px) {
     .guestlist button {
@@ -581,17 +585,18 @@ footer {
   padding: 15px 25px;
   font-size: 16px;
   font-weight: 300;
-  border: 1px solid #050500;
+  border: none;
   border-radius: 2px;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.1), 0px 3px 6px 2px rgba(0, 0, 0, 0.07);
   margin-top: 26px;
   margin-bottom: 10px;
   text-align: center;
-  transition-duration: 0.4s; }
+  transition-duration: 0.333s; }
   .login button:focus {
     outline: none; }
   .login button:hover {
-    background-color: #fff;
-    background-color: white;
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2), 0px 3px 7px 3px rgba(0, 0, 0, 0.1);
     cursor: pointer; }
   @media (min-width: 648px) {
     .login button {
