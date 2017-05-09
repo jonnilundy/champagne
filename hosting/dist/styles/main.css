@@ -99,21 +99,25 @@ a {
 .header .header-title {
   font-family: "Herr Von Muellerhoff", cursive;
   text-align: center;
-  margin-top: 65px;
+  margin-top: 30px;
   margin-bottom: 0;
   font-weight: 100;
-  font-size: 58px;
+  font-size: 50px;
   padding: 0; }
   @media (min-width: 375px) {
     .header .header-title {
-      margin-top: 100px;
-      font-size: 96px;
+      margin-top: 30px;
+      font-size: 60px;
       line-height: 115px;
       margin-left: 20px;
       margin-right: 20px; } }
   @media (min-width: 648px) {
     .header .header-title {
-      margin-top: 10%;
+      font-size: 96px;
+      margin-top: 80px; } }
+  @media (min-width: 834px) {
+    .header .header-title {
+      margin-top: 100px;
       font-size: 130px;
       font-weight: 100;
       line-height: 150px; } }
@@ -121,7 +125,8 @@ a {
     cursor: pointer;
     text-decoration: none;
     color: #050500;
-    line-height: 79px; }
+    line-height: 79px;
+    transition: none; }
 
 .header .header-desc {
   font-weight: 300;
@@ -129,18 +134,19 @@ a {
   color: #050500;
   letter-spacing: 4px;
   padding-top: 0;
-  margin: 15px 0 100px;
+  margin: 15px 0 50px;
   line-height: normal; }
   @media (min-width: 375px) {
     .header .header-desc {
-      font-size: 22px;
+      font-size: 20px;
       letter-spacing: 10px; } }
   @media (min-width: 648px) {
     .header .header-desc {
       font-size: 27px;
       padding-top: 10px;
       letter-spacing: 15px;
-      font-weight: 300; } }
+      font-weight: 300;
+      margin-bottom: 100px; } }
 
 .header:hover {
   text-decoration: none; }
@@ -149,7 +155,7 @@ a {
   margin-left: 0;
   margin-right: 0;
   max-width: 750px;
-  padding: 60px 20px;
+  padding: 30px 20px 30px;
   background-color: rgba(255, 255, 255, 0.6); }
   @media (min-width: 648px) {
     .container {
@@ -157,6 +163,7 @@ a {
       margin-right: auto;
       padding-left: 5%;
       padding-right: 5%;
+      padding: 80px 5%;
       border-radius: 5px; } }
   @media (min-width: 834px) {
     .container {
@@ -188,11 +195,10 @@ a {
   font-size: 20px;
   padding: 0;
   line-height: 40px;
-  margin: 20px;
-  transition: .33s; }
+  margin: 20px; }
   @media (min-width: 648px) {
     .details p.date {
-      font-size: 30px; } }
+      font-size: 28px; } }
 
 .details p.copy-button {
   font-family: "Cinzel", serif;
@@ -213,7 +219,7 @@ a {
 
 .details a img {
   max-width: 140px;
-  margin: 10px 50px;
+  margin: 10px 10px;
   padding: 10px;
   border-radius: 2px;
   background: rgba(255, 255, 255, 0.7);
@@ -221,14 +227,17 @@ a {
   transition: box-shadow .333s; }
   @media (min-width: 648px) {
     .details a img {
-      max-width: 200px;
+      max-width: 150px;
       margin: 10px 10px; }
       .details a img:hover {
         box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.12), 0px 3px 8px 3px rgba(0, 0, 0, 0.07); } }
+  @media (min-width: 834px) {
+    .details a img {
+      ma-width: 200px; } }
 
 .rsvp h2 {
   font-size: 20px;
-  margin: 20px auto 40px;
+  margin: 20px auto 20px;
   line-height: normal;
   letter-spacing: 5px;
   font-weight: bold; }
