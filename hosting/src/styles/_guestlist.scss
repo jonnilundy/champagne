@@ -1,8 +1,23 @@
 @import "variables";
 
+
+
 .guestlist {
 	.table-container {
 		overflow: auto;
+	}
+
+	h2 {
+		font-size: 20px;
+        margin: 20px auto 40px;
+        line-height: normal;
+        letter-spacing: 5px;
+        font-weight: bold;
+        
+        @media (min-width: $medium) {
+            font-size: 30px;
+            letter-spacing: 10px
+        }
 	}
 
 	table {
