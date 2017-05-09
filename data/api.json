@@ -39,6 +39,9 @@
 			"artist": {
 				"type": "string"
 			},
+			"message": {
+				"type": "string"
+			},
 			"timestamp": {
 				"type": "string",
 				"required": true
