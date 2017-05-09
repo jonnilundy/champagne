@@ -14,7 +14,7 @@
         padding: 0 40px; } }
     .nav .nav-item a {
       cursor: pointer;
-      color: #fff;
+      color: #050500;
       letter-spacing: 3px;
       transition: .33s;
       font-weight: 300;
@@ -30,7 +30,7 @@
         .nav .nav-item a {
           font-size: 18px; } }
       .nav .nav-item a:hover {
-        color: rgba(5, 5, 0, 0.5);
+        color: rgba(5, 5, 0, 0.6);
         text-decoration: none;
         background-color: transparent;
         font-weight: 300; }
@@ -43,7 +43,7 @@ h1 {
   font-weight: 300;
   font-size: 34px;
   font-family: "Herr Von Muellerhoff", cursive;
-  color: #fff;
+  color: #050500;
   padding-bottom: 10px;
   line-height: 50px; }
   @media (min-width: 425px) {
@@ -57,7 +57,7 @@ h2 {
   font-family: "Cinzel", serif;
   font-size: 22px;
   font-weight: 300;
-  color: #fff;
+  color: #050500;
   margin-bottom: 10px;
   margin-top: 10px;
   line-height: 65px; }
@@ -73,7 +73,7 @@ h2 {
 h3 {
   font-size: 40px;
   letter-spacing: 2px;
-  color: #fff; }
+  color: #050500; }
   @media (min-width: 425px) {
     h3 {
       font-size: 33px; } }
@@ -88,7 +88,7 @@ p {
   padding-bottom: 15px;
   line-height: 50px;
   font-weight: 100;
-  color: #fff; }
+  color: #050500; }
   @media (min-width: 425px) {
     p {
       font-size: 30px;
@@ -97,12 +97,12 @@ p {
 a {
   text-decoration: none;
   font-weight: 300;
-  color: #fff;
+  color: #050500;
   transition: .6s; }
   a:hover {
     text-decoration: none;
     font-weight: 500;
-    color: rgba(255, 255, 255, 0.7); }
+    color: rgba(5, 5, 0, 0.7); }
 
 .header .header-title {
   font-family: "Herr Von Muellerhoff", cursive;
@@ -128,13 +128,13 @@ a {
   .header .header-title a {
     cursor: pointer;
     text-decoration: none;
-    color: white;
+    color: #050500;
     line-height: 79px; }
 
 .header .header-desc {
   font-weight: 300;
   font-size: 18px;
-  color: white;
+  color: #050500;
   letter-spacing: 4px;
   padding-top: 0;
   margin: 15px 0 100px;
@@ -157,8 +157,8 @@ a {
   margin-left: 0;
   margin-right: 0;
   max-width: 750px;
-  padding: 20px 20px;
-  background-color: rgba(5, 5, 0, 0.8); }
+  padding: 60px 20px;
+  background-color: rgba(255, 255, 255, 0.6); }
   @media (min-width: 648px) {
     .container {
       margin-left: auto;
@@ -172,46 +172,65 @@ a {
       padding-right: 5%; } }
 
 .details h2 {
-  font-size: 18px;
-  margin: 20px;
-  line-height: normal; }
+  font-size: 20px;
+  margin: 20px auto 40px;
+  line-height: normal;
+  letter-spacing: 5px;
+  font-weight: bold; }
   @media (min-width: 648px) {
     .details h2 {
-      font-size: 27px; } }
+      font-size: 30px;
+      letter-spacing: 10px; } }
   .details h2.detail-sub {
     font-family: "Herr Von Muellerhoff", cursive;
-    font-size: 36px;
-    color: rgba(255, 255, 255, 0.7); }
+    font-size: 40px;
+    color: #050500;
+    font-weight: 100;
+    letter-spacing: inherit; }
     @media (min-width: 648px) {
       .details h2.detail-sub {
         font-size: 50px; } }
 
 .details p.date {
   font-family: "Cinzel", serif;
-  font-size: 18px;
+  font-size: 20px;
   padding: 0;
-  line-height: 35px;
+  line-height: 40px;
   margin: 20px;
   transition: .33s; }
   @media (min-width: 648px) {
     .details p.date {
-      font-size: 27px; } }
+      font-size: 30px; } }
 
 .details p.copy-button {
   font-family: "Cinzel", serif;
-  font-size: 10px;
+  font-size: 12px;
   line-height: 8px;
   margin-top: 0;
   padding-top: 0; }
   .details p.copy-button span {
     transition: color .333s; }
   .details p.copy-button span:hover {
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(5, 5, 0, 0.7);
     cursor: pointer; }
   @media (min-width: 648px) {
     .details p.copy-button {
       font-size: 14px;
       line-height: 10px; } }
+
+.details a img {
+  max-width: 140px;
+  margin: 10px 50px;
+  padding: 10px;
+  border-radius: 2px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1), 0px 1px 8px 0px rgba(0, 0, 0, 0.05);
+  transition: box-shadow .333s; }
+  @media (min-width: 648px) {
+    .details a img {
+      max-width: 200px;
+      margin: 10px 10px; }
+      .details a img:hover {
+        box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.12), 0px 3px 8px 0px rgba(0, 0, 0, 0.07); } }
 
 .rsvp h2 {
   margin-bottom: 18px;
@@ -231,7 +250,7 @@ a {
   .rsvp .form-group label {
     font-weight: 300;
     font-family: "Cinzel", serif;
-    color: #fff;
+    color: #050500;
     font-size: 16px;
     margin-top: 35px;
     text-align: left;
@@ -240,7 +259,7 @@ a {
     .rsvp .form-group label.sublabel {
       font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-weight: 300;
-      color: rgba(255, 255, 255, 0.6);
+      color: #050500;
       margin-top: 0; }
     @media (min-width: 648px) {
       .rsvp .form-group label {
@@ -256,8 +275,9 @@ a {
     margin-top: 10px;
     border: none;
     background: none;
-    border-left: 1px solid rgba(255, 255, 255, 0.9);
-    color: white; }
+    border-left: 1px solid rgba(5, 5, 0, 0.9);
+    border-radius: 0;
+    color: #050500; }
     .rsvp .form-group input:focus {
       outline: none;
       /* FF 4-18 */
@@ -273,7 +293,7 @@ a {
         color: transparent; }
     .rsvp .form-group input[type="checkbox"] {
       margin-bottom: 10px;
-      background: rgba(255, 255, 255, 0.8);
+      background: rgba(5, 5, 0, 0.8);
       height: 25px;
       width: 30px; }
     .rsvp .form-group input[type="radio"] {
@@ -283,20 +303,21 @@ a {
       display: none; }
     .rsvp .form-group input[type="radio"] + label {
       transition: color 0.333s;
-      padding-left: 24px; }
-    .rsvp .form-group input[type="radio"]:checked + label {
-      color: #fff; }
+      padding-left: 24px;
+      color: #050500; }
     .rsvp .form-group input[type="radio"] + label:before {
       transition: color 0.333s;
-      color: rgba(255, 255, 255, 0.6);
+      color: rgba(5, 5, 0, 0.6);
       content: "\E059";
       font-family: 'icon-16';
       font-size: 24px;
-      position: absolute;
-      left: 0px; }
+      position: relative;
+      left: -20px;
+      top: 5px;
+      cursor: pointer; }
     .rsvp .form-group input[type="radio"]:checked + label:before {
       content: "\E058";
-      color: #fff; }
+      color: #050500; }
     .rsvp .form-group input.number {
       font-size: 24px;
       line-height: 34px;
@@ -325,25 +346,25 @@ a {
       top: 0px; }
   .rsvp .form-group ::-webkit-input-placeholder {
     /* WebKit, Blink, Edge */
-    color: rgba(255, 255, 255, 0.6); }
+    color: rgba(5, 5, 0, 0.6); }
   .rsvp .form-group :-moz-placeholder {
     /* Mozilla Firefox 4 to 18 */
-    color: rgba(255, 255, 255, 0.6); }
+    color: rgba(5, 5, 0, 0.6); }
   .rsvp .form-group ::-moz-placeholder {
     /* Mozilla Firefox 19+ */
-    color: rgba(255, 255, 255, 0.6); }
+    color: rgba(5, 5, 0, 0.6); }
   .rsvp .form-group :-ms-input-placeholder {
     /* Internet Explorer 10-11 */
-    color: rgba(255, 255, 255, 0.6); }
+    color: rgba(5, 5, 0, 0.6); }
 
 .rsvp button {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0);
   font-family: "Cinzel", serif;
-  color: white;
-  padding: 10px 20px;
-  font-size: 15px;
+  color: #050500;
+  padding: 15px 25px;
+  font-size: 16px;
   font-weight: 300;
-  border: 1px solid #fff;
+  border: 1px solid #050500;
   border-radius: 2px;
   margin-top: 26px;
   margin-bottom: 10px;
@@ -352,7 +373,8 @@ a {
   .rsvp button:focus {
     outline: none; }
   .rsvp button:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: #fff;
+    background-color: white;
     cursor: pointer; }
   @media (min-width: 648px) {
     .rsvp button {
@@ -363,7 +385,7 @@ a {
   overflow: auto; }
 
 .guestlist table {
-  color: #fff;
+  color: #050500;
   margin-left: auto;
   margin-right: auto;
   margin-top: 35px;
@@ -390,13 +412,13 @@ a {
     padding-bottom: 5px; }
 
 .guestlist button {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0);
   font-family: "Cinzel", serif;
-  color: white;
-  padding: 10px 20px;
-  font-size: 15px;
+  color: #050500;
+  padding: 15px 25px;
+  font-size: 16px;
   font-weight: 300;
-  border: 1px solid #fff;
+  border: 1px solid #050500;
   border-radius: 2px;
   margin-top: 26px;
   margin-bottom: 10px;
@@ -405,7 +427,8 @@ a {
   .guestlist button:focus {
     outline: none; }
   .guestlist button:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: #fff;
+    background-color: white;
     cursor: pointer; }
   @media (min-width: 648px) {
     .guestlist button {
@@ -413,27 +436,38 @@ a {
       padding: 15px 25px; } }
 
 .outer-wrapper {
-  top: -55px;
+  top: 0;
   bottom: 0;
   left: 0;
-  right: -290px;
+  right: 0;
   z-index: -1;
   position: fixed;
-  background-image: url("/images/mojo_3.jpg");
+  background-image: url("/images/flower-background.jpg");
   background-size: cover;
   background-position: center; }
 
 footer {
   padding: 80px 0; }
 
+.login h2 {
+  margin-bottom: 18px;
+  font-size: 18px; }
+  @media (min-width: 648px) {
+    .login h2 {
+      font-size: 27px; } }
+
 .login .form-group {
   font-weight: 100;
   text-align: left;
   /* Placeholder compatability */ }
+  .login .form-group .vertical-align {
+    vertical-align: middle;
+    margin-top: 10px;
+    margin-bottom: 10px; }
   .login .form-group label {
     font-weight: 300;
     font-family: "Cinzel", serif;
-    color: #fff;
+    color: #050500;
     font-size: 16px;
     margin-top: 35px;
     text-align: left;
@@ -442,7 +476,7 @@ footer {
     .login .form-group label.sublabel {
       font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-weight: 300;
-      color: rgba(255, 255, 255, 0.6);
+      color: rgba(5, 5, 0, 0.6);
       margin-top: 0; }
     @media (min-width: 648px) {
       .login .form-group label {
@@ -458,8 +492,9 @@ footer {
     margin-top: 10px;
     border: none;
     background: none;
-    border-left: 1px solid rgba(255, 255, 255, 0.9);
-    color: white; }
+    border-left: 1px solid rgba(5, 5, 0, 0.9);
+    border-radius: 0px;
+    color: #050500; }
     .login .form-group input:focus {
       outline: none;
       /* FF 4-18 */
@@ -473,30 +508,80 @@ footer {
         color: transparent; }
       .login .form-group input:focus:-ms-input-placeholder {
         color: transparent; }
+    .login .form-group input[type="checkbox"] {
+      margin-bottom: 10px;
+      background: rgba(5, 5, 0, 0.8);
+      height: 25px;
+      width: 30px; }
+    .login .form-group input[type="radio"] {
+      margin-top: 0;
+      width: 20px; }
+    .login .form-group input[type="radio"] {
+      display: none; }
+    .login .form-group input[type="radio"] + label {
+      transition: color 0.333s;
+      padding-left: 24px;
+      color: #050500; }
+    .login .form-group input[type="radio"] + label:before {
+      transition: color 0.333s;
+      color: rgba(5, 5, 0, 0.6);
+      content: "\E059";
+      font-family: 'icon-16';
+      font-size: 24px;
+      position: relative;
+      left: -20px;
+      top: 5px;
+      cursor: pointer; }
+    .login .form-group input[type="radio"]:checked + label:before {
+      content: "\E058";
+      color: #050500; }
+    .login .form-group input.number {
+      font-size: 24px;
+      line-height: 34px;
+      margin: 0;
+      padding: 0 10px;
+      width: 50px; }
+    .login .form-group input[name="guest_count"] {
+      width: 100%; }
     @media (min-width: 648px) {
       .login .form-group input {
         font-size: 20px; } }
+  .login .form-group .flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding: 10px 0;
+    height: 34px; }
+    .login .form-group .flex-row > label {
+      display: inline-flex;
+      line-height: 34px;
+      flex: 0 0 auto;
+      position: relative;
+      top: 0px; }
   .login .form-group ::-webkit-input-placeholder {
     /* WebKit, Blink, Edge */
-    color: rgba(255, 255, 255, 0.6); }
+    color: rgba(5, 5, 0, 0.6); }
   .login .form-group :-moz-placeholder {
     /* Mozilla Firefox 4 to 18 */
-    color: rgba(255, 255, 255, 0.6); }
+    color: rgba(5, 5, 0, 0.6); }
   .login .form-group ::-moz-placeholder {
     /* Mozilla Firefox 19+ */
-    color: rgba(255, 255, 255, 0.6); }
+    color: rgba(5, 5, 0, 0.6); }
   .login .form-group :-ms-input-placeholder {
     /* Internet Explorer 10-11 */
-    color: rgba(255, 255, 255, 0.6); }
+    color: rgba(5, 5, 0, 0.6); }
 
 .login button {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0);
   font-family: "Cinzel", serif;
-  color: white;
-  padding: 10px 20px;
-  font-size: 15px;
+  color: #050500;
+  padding: 15px 25px;
+  font-size: 16px;
   font-weight: 300;
-  border: 1px solid #fff;
+  border: 1px solid #050500;
   border-radius: 2px;
   margin-top: 26px;
   margin-bottom: 10px;
@@ -505,7 +590,8 @@ footer {
   .login button:focus {
     outline: none; }
   .login button:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: #fff;
+    background-color: white;
     cursor: pointer; }
   @media (min-width: 648px) {
     .login button {
@@ -513,7 +599,7 @@ footer {
       padding: 15px 25px; } }
 
 .senna-loading-bar {
-  color: #fff; }
+  color: #050500; }
 
 body {
   margin: 0; }
