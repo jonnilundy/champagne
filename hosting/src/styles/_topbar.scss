@@ -8,28 +8,21 @@
 	.nav-item {
 		display: inline-block;
 		padding: 0 15px;
-		@media (min-width: $small) {
-			padding: 0 25px;
-		}
 		@media (min-width: $medium) {
 			padding: 0 40px;
 		}
 		a {
 			cursor: pointer;
 			color: $primary;
-			letter-spacing: 3px;
+			letter-spacing: 2px;
 			transition: .33s;
 			font-weight: 300;
-			font-size: 14px;
+			font-size: 12px;
 			text-decoration: none;
 			text-transform: uppercase;
-			@media (min-width: $small) {
-				font-size: 16px;
-				font-weight: 300;
-				letter-spacing: 5px;
-			}
+
 			@media (min-width: $medium) {
-				font-size: 18px;
+				font-size: 14px;
 			}
 			&:hover {
 				color: rgba($primary, .6);
