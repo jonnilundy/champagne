@@ -36,6 +36,9 @@
 			"song": {
 				"type": "string"
 			},
+			"artist": {
+				"type": "string"
+			},
 			"timestamp": {
 				"type": "string",
 				"required": true
