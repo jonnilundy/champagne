@@ -43,6 +43,7 @@
 			line-height: 8px;
 			margin-top: 0;
 			padding-top: 0;
+			padding-bottom: 60px;
 			
 			span {
 				transition: color .333s;
@@ -66,13 +67,14 @@
 			margin: 10px 50px;
 			padding: 10px;
 			border-radius: 2px;
+			background: rgba(255,255,255,.7);
 			box-shadow: 0px 1px 3px 0px rgba(0,0,0,.1), 0px 1px 8px 0px rgba(0, 0, 0, 0.05);
 			transition: box-shadow .333s;
 			@media (min-width: $medium) {
 				max-width: 200px;
 				margin: 10px 10px;
 				&:hover {
-					box-shadow: 0px 2px 3px 0px rgba(0,0,0,.12), 0px 3px 8px 0px rgba(0, 0, 0, 0.07);
+					box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.12), 0px 3px 8px 3px rgba(0, 0, 0, 0.07);
 				}
 			}
 		}
