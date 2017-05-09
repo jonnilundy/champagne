@@ -235,11 +235,15 @@ a {
         box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.12), 0px 3px 8px 3px rgba(0, 0, 0, 0.07); } }
 
 .rsvp h2 {
-  margin-bottom: 18px;
-  font-size: 18px; }
+  font-size: 20px;
+  margin: 20px auto 40px;
+  line-height: normal;
+  letter-spacing: 5px;
+  font-weight: bold; }
   @media (min-width: 648px) {
     .rsvp h2 {
-      font-size: 27px; } }
+      font-size: 30px;
+      letter-spacing: 10px; } }
 
 .rsvp .form-group {
   font-weight: 100;
@@ -387,6 +391,17 @@ a {
 .guestlist .table-container {
   overflow: auto; }
 
+.guestlist h2 {
+  font-size: 20px;
+  margin: 20px auto 40px;
+  line-height: normal;
+  letter-spacing: 5px;
+  font-weight: bold; }
+  @media (min-width: 648px) {
+    .guestlist h2 {
+      font-size: 30px;
+      letter-spacing: 10px; } }
+
 .guestlist table {
   color: #050500;
   margin-left: auto;
@@ -452,13 +467,6 @@ a {
 
 footer {
   padding: 80px 0; }
-
-.login h2 {
-  margin-bottom: 18px;
-  font-size: 18px; }
-  @media (min-width: 648px) {
-    .login h2 {
-      font-size: 27px; } }
 
 .login .form-group {
   font-weight: 100;
