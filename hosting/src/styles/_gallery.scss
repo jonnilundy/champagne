@@ -1,0 +1,68 @@
+.gallery {
+	h2 {
+		font-size: 20px;
+		margin: 20px auto 40px;
+		line-height: normal;
+		letter-spacing: 5px;
+		font-weight: bold;
+		
+		@media (min-width: $medium) {
+			font-size: 30px;
+			letter-spacing: 10px;
+			margin-bottom: 60px;
+		}
+	}
+
+	.profile {
+		img {
+			max-width: 250px;
+			margin: 10px;
+
+			@media (min-width: $small) {
+				max-width: 300px;
+			}
+
+			@media (min-width: $medium) {
+				max-width: 260px;
+			}
+
+
+			@media (min-width: $large) {
+				max-width: 345px;
+				margin: 15px;
+			}
+		}
+	}
+	.album {
+		img {
+			max-width: 250px;
+			margin: 10px;
+
+			@media (min-width: $small) {
+				max-width: 300px;
+			}
+
+			@media (min-width: $medium) {
+				max-width: 260px;
+			}
+
+			@media (min-width: $large) {
+				max-width: 220px;
+				margin: 15px;
+			}
+		}
+	}
+
+	.photo-credit {
+		font-size: 14px;
+
+		a {
+			font-style: none;
+			font-weight: 500;
+
+			&:hover {
+				color: rgba($primary, .7);
+			}
+		}
+	}
+}

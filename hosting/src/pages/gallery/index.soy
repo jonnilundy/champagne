@@ -1,0 +1,54 @@
+---
+description: "Photos of Jonathan and Marissa"
+title: "Gallery"
+---
+
+{namespace gallery}
+
+/**
+ * 
+ */
+{template .render}
+	{call main.render data="all"}
+		{param content kind="html"}
+			{call .gallery /}
+		{/param}
+	{/call}
+{/template}
+
+/**
+ * 
+ */
+{template .gallery}
+	<div class="gallery">
+		<div class="container">
+			<div class="row text-center">
+				<h2>Gallery</h2>
+			</div>
+			<div class="profile">
+				<img src="/images/gallery/marissa.jpg">
+				<img src="/images/gallery/jonni.jpg">
+			</div>
+			<div class="album">
+				<img src="/images/gallery/1.jpg">
+				<img src="/images/gallery/2.jpg">
+				<img src="/images/gallery/3.jpg">
+				<img src="/images/gallery/4.jpg">
+				<img src="/images/gallery/5.jpg">
+				<img src="/images/gallery/6.jpg">
+				<img src="/images/gallery/7.jpg">
+				<img src="/images/gallery/8.jpg">
+				<img src="/images/gallery/9.jpg">
+				<img src="/images/gallery/10.jpg">
+				<img src="/images/gallery/11.jpg">
+				<img src="/images/gallery/12.jpg">
+				<img src="/images/gallery/13.jpg">
+				<img src="/images/gallery/14.jpg">
+				<img src="/images/gallery/15.jpg">
+			</div>
+			<p class="photo-credit">Pictures by the incredible <a href="http://emilymagers.com/" target="_blank">Emily Magers</a>!</p>
+		</div>
+	</div>
+	<footer></footer>
+	<script src="/js/index.js"></script>
+{/template}
