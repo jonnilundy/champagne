@@ -205,8 +205,7 @@ a {
   font-size: 12px;
   line-height: 8px;
   margin-top: 0;
-  padding-top: 0;
-  padding-bottom: 60px; }
+  padding: 0 0 60px; }
   .details p.copy-button span {
     transition: color .333s; }
   .details p.copy-button span:hover {
@@ -388,6 +387,18 @@ a {
     .rsvp button {
       font-size: 20px;
       padding: 15px 25px; } }
+
+.rsvp .notice {
+  font-size: 16px;
+  line-height: 30px; }
+  @media (min-width: 648px) {
+    .rsvp .notice {
+      font-size: 20px; } }
+  .rsvp .notice a {
+    font-style: none;
+    font-weight: 300; }
+    .rsvp .notice a:hover {
+      color: rgba(5, 5, 0, 0.7); }
 
 .guestlist .table-container {
   overflow: auto; }
@@ -614,15 +625,24 @@ footer {
 
 .gallery h2 {
   font-size: 20px;
-  margin: 20px auto 40px;
+  margin: 20px auto 0px;
   line-height: normal;
   letter-spacing: 5px;
   font-weight: bold; }
   @media (min-width: 648px) {
     .gallery h2 {
       font-size: 30px;
-      letter-spacing: 10px;
-      margin-bottom: 60px; } }
+      letter-spacing: 10px; } }
+
+.gallery .hashtag {
+  font-size: 16px;
+  margin-bottom: 40px;
+  margin-top: 0px;
+  font-weight: 300; }
+  @media (min-width: 648px) {
+    .gallery .hashtag {
+      margin-bottom: 60px;
+      font-size: 20px; } }
 
 .gallery .profile img {
   max-width: 250px;
@@ -653,7 +673,7 @@ footer {
       margin: 15px; } }
 
 .gallery .photo-credit {
-  font-size: 14px; }
+  font-size: 16px; }
   .gallery .photo-credit a {
     font-style: none;
     font-weight: 500; }
