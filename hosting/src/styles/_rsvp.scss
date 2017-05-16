@@ -190,4 +190,22 @@
 				padding: 15px 25px;
 			}
 	}
+
+	.notice {
+		font-size: 16px;
+		line-height: 30px;
+
+		@media (min-width: $medium) {
+			font-size: 20px;
+		}
+		
+		a {
+			font-style: none;
+			font-weight: 300;
+
+			&:hover {
+				color: rgba($primary, .7);
+			}
+		}
+	}
 }
