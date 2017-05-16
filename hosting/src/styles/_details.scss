@@ -41,8 +41,7 @@
 			font-size: 12px;
 			line-height: 8px;
 			margin-top: 0;
-			padding-top: 0;
-			padding-bottom: 60px;
+			padding: 0 0 60px;
 			
 			span {
 				transition: color .333s;
@@ -58,6 +57,7 @@
 				line-height: 10px;
 			}	
 		}
+
 	}
 
 	a {
@@ -81,4 +81,5 @@
 			}
 		}
 	}
+		
 }
