@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>400 / Bad Request</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,700|Cinzel">
+	<style>
+	body {
+	    background: rgb(250,250,250);
+	    font-family: 'Raleway', sans-serif;
+	}
+
+	.outer-wrapper {
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: -1;
+		position: fixed;
+		background-image: url("https://cloud.githubusercontent.com/assets/23219848/26383254/8afb52b8-3fe6-11e7-82eb-c46449ffccb0.jpg");
+		background-size: cover;
+		background-position: center;
+	}
+
+	.container {
+		margin-top: 100px;
+		text-align: center;
+	}
+
+	h1 {
+		font-family: Cinzel;
+		font-size: 45px;
+		font-weight: 100;
+		color: rgb(5, 5, 0);
+		margin: 0 ;
+		margin-bottom: 30px;
+		@media (min-width: 648px) {
+			font-size: 60px;
+		}
+	}
+
+	p {
+		font-weight: 300;
+		font-size: 18px;
+		color: rgb(5, 5, 0);
+		margin: 10px 0;
+	}
+
+	.bottom {
+		position: absolute;
+		left: 0;
+		bottom: 20px;
+		right: 0;
+		line-height: 35px;
+	}
+
+	@media (min-width: 648px) {
+		h1 {
+			font-size: 60px;
+		}
+		p {
+			font-size: 20px;
+		}
+		.container {
+			margin-top: 175px;
+		}
+	}
+	</style>
+</head>
+<body>
+	<div class="outer-wrapper"></div>
+	<div class="container">
+		<h1>Hey there!</h1>
+		<p>We are making a small update and should be back in a moment!<p>
+		<p>Please try refreshing this page.</p>
+		<p class="bottom">Still not working? Shoot Jonni a text at 503.858.7583.<br>ERROR 404</p>
+	</div>
+</body>
+</html>
+
