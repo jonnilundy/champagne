@@ -19,16 +19,18 @@ function initAutocomplete() {
 
 var form = document.querySelector('.rsvp-form');
 
+
 form.addEventListener('submit', function(e) {
 	e.preventDefault();
 
+	var attending = document.querySelector('input[name="attend"]:checked');
 
 	var formValues = {
-		first_name: form.first_name.value,
-		last_name: form.last_name.value,
+		first_name: document.querySelector('input[name="first_name"]').value,
+		last_name: document.querySelector('input[name="first_name"]').value,
 		email: form.email.value,
 		address: form.address.value,
-		attend: form.attend.value,
+		attend: attending.value,
 		plus_one: form.plus_one.value,
 		gluten: form.gluten.value,
 		dairy: form.dairy.value,
@@ -38,16 +40,16 @@ form.addEventListener('submit', function(e) {
 		timestamp: new Date().toISOString()
 	}
 
-WeDeploy
-	.data('data.jonathan-and-marissa.wedeploy.io')
-    .create('rsvp', formValues)
-		.then(function(response) {
-			form.reset();
-			console.info('Saved:', response);
-		})
-		.catch(function(error) {
-			console.error(error);
-		});
+	WeDeploy
+		.data('data.jonathan-and-marissa.wedeploy.io')
+	    .create('rsvp', formValues)
+			.then(function(response) {
+				form.reset();
+				console.info('Saved:', response);
+			})
+			.catch(function(error) {
+				console.error(error);
+			});
 
 
 // EMAIL // 
