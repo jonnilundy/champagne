@@ -21,7 +21,7 @@
 				"required": true
 			},
 			"attend": {
-				"type": "boolean",
+				"type": "string",
 				"required": true
 			},
 			"plus_one": {
