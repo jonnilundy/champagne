@@ -25,6 +25,7 @@
 		margin-left: auto;
 		margin-right: auto;
 		margin-top: 35px;
+		margin-bottom: 35px;
 		font-family: $font-family-sans-serif;
 
 		
@@ -36,13 +37,20 @@
 			&.th-sm {
 				min-width: 70px;
 				@media (min-width: $medium) {
-					min-width: 90px;
+					min-width: 80px;
 				}
 			}
 			&.th-lg {
-				min-width: 100px;
+				min-width: 150px;
 				@media (min-width: $medium) {
-					min-width: 150px;
+					min-width: 200px;
+				}
+			}
+
+			&.th-xlg {
+				min-width: 2000px;
+				@media (min-width: $medium) {
+					min-width: 275px;
 				}
 			}
 		}
@@ -53,6 +61,49 @@
 			max-width: 120px;
 			padding-top: 5px;
 			padding-bottom: 5px;
+
+			&.table-left {
+				text-align: left;
+			}
+		}
+
+		tfooter {
+			border-top: 1px;
+		}
+	}
+
+	.rsvpNotes {
+		margin-bottom: 35px;
+		
+		@media (min-width: $medium) {
+			margin-left: 100px;
+			margin-right: 100px;
+		}
+
+		.message-content {
+			font-size: 16px;
+			font-weight: 300;
+			padding: 0;
+			margin: 0;
+			line-height: 30px;
+			@media (min-width: $medium) {
+				font-size: 18px;
+			}
+		}
+
+		.message-name {
+			text-align: left;
+			font-family: $font-family-sans;
+			font-weight: 900;
+			font-size: 25px;
+			color: rgba($primary, .1);
+			margin: 50px 0 -5px 0;
+			padding: 0;
+			line-height: inherit;
+
+			@media (min-width: $medium) {
+				margin-top: 70px;
+			}
 		}
 	}
 

@@ -21,14 +21,23 @@ function signOut() {
 //
 
 var rsvpList = document.querySelector('.rsvpList');
+var rsvpNotes = document.querySelector('.rsvpNotes');
+var guestListTotal = document.querySelector('#guestListTotal');
+var glutonListTotal = document.querySelector('#glutonListTotal');
+var dairyListTotal = document.querySelector('#dairyListTotal');
 
 var data = WeDeploy.data('data.jonathan-and-marissa.wedeploy.io');
 
+// Guest List
+
 WeDeploy
-  .data('data.jonathan-and-marissa.wedeploy.io')
-  .get('rsvp')
-	.then(function(response) {
-		appendRsvp(response);
+	.data('data.jonathan-and-marissa.wedeploy.io')
+	.orderBy('timestamp')
+	.get('rsvp')
+	.then(function(guests) {
+		appendRsvp(guests);
+		appendNotes(guests);
+		countRsvp(guests);
 	})
 	.catch(function(error) {
 		console.error(error);
@@ -39,8 +48,7 @@ function appendRsvp(rsvp) {
 
 	rsvp.forEach(function(guest) {
 		guestList += '<tr>' +
-			'<td class="first_name">'+guest.first_name+'</td>' +
-			'<td class="last_name">'+guest.last_name+'</td>' +
+			'<td class="name">'+guest.first_name+' '+guest.last_name+'</td>' +
 			'<td class="attend">'+guest.attend+'</td>' +
 			'<td class="plus_one">'+guest.plus_one+'</td>' +
 			'<td class="gluten">'+guest.gluten+'</td>' +
@@ -49,4 +57,44 @@ function appendRsvp(rsvp) {
 	});
 
 	rsvpList.innerHTML = guestList;
+}
+
+// Guest Notes
+
+function appendNotes(rsvp) {
+	var messages = '';
+
+	rsvp.forEach(function(guest) {
+		if (typeof guest.message === 'string' && guest.message !== '') {
+			messages += '<p class="message-name">'+guest.first_name+' '+guest.last_name+'</p>'+'<p class="message-content">'+guest.message+'</p>'
+		}
+	});
+
+	rsvpNotes.innerHTML = messages;
+}
+
+// List Totals
+
+function countRsvp(rsvp) {
+	var guestCount = 0;
+	var glutenCount = 0;
+	var dairyCount = 0;
+
+	rsvp.forEach(function(guest) {
+		if (guest.plust_one) {
+			guestCount = guestCount + parseInt(guest.plus_one, 10);
+		}
+		if (guest.gluten) {
+			glutenCount = glutenCount + parseInt(guest.gluten, 10);
+		}
+		if (guest.dairy) {
+			dairyCount = dairyCount + parseInt(guest.dairy, 10);
+		}
+		console.log(guest.plus_one)
+	});
+
+	guestListTotal.innerHTML = guestCount;
+	glutonListTotal.innerHTML = glutenCount;
+	dairyListTotal.innerHTML = dairyCount;
+	console.log(guestCount)
 }
