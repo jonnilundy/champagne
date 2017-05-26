@@ -419,6 +419,7 @@ a {
   margin-left: auto;
   margin-right: auto;
   margin-top: 35px;
+  margin-bottom: 35px;
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif; }
   .guestlist table th {
     font-weight: 700;
@@ -428,18 +429,55 @@ a {
       min-width: 70px; }
       @media (min-width: 648px) {
         .guestlist table th.th-sm {
-          min-width: 90px; } }
+          min-width: 80px; } }
     .guestlist table th.th-lg {
-      min-width: 100px; }
+      min-width: 150px; }
       @media (min-width: 648px) {
         .guestlist table th.th-lg {
-          min-width: 150px; } }
+          min-width: 200px; } }
+    .guestlist table th.th-xlg {
+      min-width: 2000px; }
+      @media (min-width: 648px) {
+        .guestlist table th.th-xlg {
+          min-width: 275px; } }
   .guestlist table td {
     font-weight: 300;
     overflow: hidden;
     max-width: 120px;
     padding-top: 5px;
     padding-bottom: 5px; }
+    .guestlist table td.table-left {
+      text-align: left; }
+  .guestlist table tfooter {
+    border-top: 1px; }
+
+.guestlist .rsvpNotes {
+  margin-bottom: 35px; }
+  @media (min-width: 648px) {
+    .guestlist .rsvpNotes {
+      margin-left: 100px;
+      margin-right: 100px; } }
+  .guestlist .rsvpNotes .message-content {
+    font-size: 16px;
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+    line-height: 30px; }
+    @media (min-width: 648px) {
+      .guestlist .rsvpNotes .message-content {
+        font-size: 18px; } }
+  .guestlist .rsvpNotes .message-name {
+    text-align: left;
+    font-family: "Cinzel", serif;
+    font-weight: 900;
+    font-size: 25px;
+    color: rgba(5, 5, 0, 0.1);
+    margin: 50px 0 -5px 0;
+    padding: 0;
+    line-height: inherit; }
+    @media (min-width: 648px) {
+      .guestlist .rsvpNotes .message-name {
+        margin-top: 70px; } }
 
 .guestlist button {
   background-color: rgba(255, 255, 255, 0);

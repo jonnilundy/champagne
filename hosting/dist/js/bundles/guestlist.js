@@ -144,15 +144,11 @@ function $guestlist(opt_data, opt_ignored, opt_ijData) {
         ie_open('div', null, null,
             'class', 'table-container');
           ie_open('table', null, null,
-              'class', ' table');
+              'class', 'table');
             ie_open('thead');
               ie_open('th', null, null,
                   'class', 'th-lg');
-                itext('First Name');
-              ie_close('th');
-              ie_open('th', null, null,
-                  'class', 'th-lg');
-                itext('Last Name');
+                itext('Guest');
               ie_close('th');
               ie_open('th', null, null,
                   'class', 'th-sm');
@@ -160,7 +156,7 @@ function $guestlist(opt_data, opt_ignored, opt_ijData) {
               ie_close('th');
               ie_open('th', null, null,
                   'class', 'th-sm');
-                itext('+1');
+                itext('Group');
               ie_close('th');
               ie_open('th', null, null,
                   'class', 'th-sm');
@@ -173,8 +169,21 @@ function $guestlist(opt_data, opt_ignored, opt_ijData) {
             ie_close('thead');
             ie_void('tbody', null, null,
                 'class', 'rsvpList');
+            ie_void('td');
+            ie_void('td');
+            ie_void('td', null, null,
+                'id', 'guestListTotal');
+            ie_void('td', null, null,
+                'id', 'glutonListTotal');
+            ie_void('td', null, null,
+                'id', 'dairyListTotal');
           ie_close('table');
         ie_close('div');
+        ie_open('h2');
+          itext('NOTES');
+        ie_close('h2');
+        ie_void('div', null, null,
+            'class', 'rsvpNotes');
       ie_close('form');
       ie_open('div', null, null,
           'class', 'btn-wrapper');
