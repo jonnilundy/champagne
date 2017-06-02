@@ -81,7 +81,7 @@ function countRsvp(rsvp) {
 	var dairyCount = 0;
 
 	rsvp.forEach(function(guest) {
-		if (guest.plust_one) {
+		if (guest.plus_one && guest.attend === "Yes") {
 			guestCount = guestCount + parseInt(guest.plus_one, 10);
 		}
 		if (guest.gluten) {
@@ -90,11 +90,9 @@ function countRsvp(rsvp) {
 		if (guest.dairy) {
 			dairyCount = dairyCount + parseInt(guest.dairy, 10);
 		}
-		console.log(guest.plus_one)
 	});
 
 	guestListTotal.innerHTML = guestCount;
 	glutonListTotal.innerHTML = glutenCount;
 	dairyListTotal.innerHTML = dairyCount;
-	console.log(guestCount)
 }
