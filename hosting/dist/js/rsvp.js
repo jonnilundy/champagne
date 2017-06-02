@@ -27,7 +27,7 @@ form.addEventListener('submit', function(e) {
 
 	var formValues = {
 		first_name: document.querySelector('input[name="first_name"]').value,
-		last_name: document.querySelector('input[name="first_name"]').value,
+		last_name: document.querySelector('input[name="last_name"]').value,
 		email: form.email.value,
 		address: form.address.value,
 		attend: attending.value,
