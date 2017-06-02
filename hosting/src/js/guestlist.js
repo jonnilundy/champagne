@@ -32,6 +32,7 @@ var data = WeDeploy.data('data.jonathan-and-marissa.wedeploy.io');
 
 WeDeploy
 	.data('data.jonathan-and-marissa.wedeploy.io')
+	.orderBy('attend')
 	.orderBy('timestamp')
 	.get('rsvp')
 	.then(function(guests) {
@@ -65,7 +66,7 @@ function appendNotes(rsvp) {
 	var messages = '';
 
 	rsvp.forEach(function(guest) {
-		if (typeof guest.message === 'string' && guest.message !== '') {
+		if (guest.message) {
 			messages += '<p class="message-name">'+guest.first_name+' '+guest.last_name+'</p>'+'<p class="message-content">'+guest.message+'</p>'
 		}
 	});
