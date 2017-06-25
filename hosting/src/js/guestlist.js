@@ -4,7 +4,7 @@
 // AUTH 
 //
 
-var auth = WeDeploy.auth('auth.jonathan-and-marissa.wedeploy.io');
+var auth = WeDeploy.auth('auth.portland-reception.wedeploy.io');
 
 if (!auth.currentUser) {document.location.href = '/login';}
 
@@ -26,12 +26,12 @@ var guestListTotal = document.querySelector('#guestListTotal');
 var glutonListTotal = document.querySelector('#glutonListTotal');
 var dairyListTotal = document.querySelector('#dairyListTotal');
 
-var data = WeDeploy.data('data.jonathan-and-marissa.wedeploy.io');
+var data = WeDeploy.data('data.portland-reception.wedeploy.io');
 
 // Guest List
 
 WeDeploy
-	.data('data.jonathan-and-marissa.wedeploy.io')
+	.data('data.portland-reception.wedeploy.io')
 	.orderBy('attend')
 	.orderBy('timestamp')
 	.get('rsvp')
