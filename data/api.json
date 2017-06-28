@@ -24,20 +24,8 @@
 				"type": "string",
 				"required": true
 			},
-			"plus_one": {
+			"group": {
 				"type": "number"
-			},
-			"gluten": {
-				"type": "number"
-			},
-			"dairy": {
-				"type": "number"
-			},
-			"song": {
-				"type": "string"
-			},
-			"artist": {
-				"type": "string"
 			},
 			"message": {
 				"type": "string"
