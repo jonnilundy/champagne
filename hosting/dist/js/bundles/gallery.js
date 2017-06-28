@@ -143,7 +143,7 @@ function $gallery(opt_data, opt_ignored, opt_ijData) {
         ie_close('h2');
         ie_open('p', null, null,
             'class', 'hashtag');
-          itext('#lundyloveisbrewing');
+          itext('#lundylove');
         ie_close('p');
       ie_close('div');
       ie_open('div', null, null,

@@ -139,18 +139,6 @@ function $rsvp(opt_data, opt_ignored, opt_ijData) {
       ie_open('h2');
         itext('RSVP');
       ie_close('h2');
-      ie_open('p', null, null,
-          'class', 'notice');
-        itext('ATTENTION: the location and time of the wedding has changed!');
-        ie_open('br');
-        ie_close('br');
-        ie_open('strong');
-          ie_open('a', null, null,
-              'href', '/details/');
-            itext('See here for details.');
-          ie_close('a');
-        ie_close('strong');
-      ie_close('p');
       ie_open('form', null, null,
           'class', 'rsvp-form',
           'onkeypress', 'return event.keyCode != 13;');
