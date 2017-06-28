@@ -72,7 +72,7 @@ form.addEventListener('submit', function(e) {
 				form.reset();
 
 				alert('Yay! Thanks for RSVPing. :)');
-				document.location.href = '/details/'
+				document.location.href = '/'
 			}
 			else {
 				alert('Oops, your thank you email was not sent.');
