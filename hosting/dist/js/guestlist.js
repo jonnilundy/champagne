@@ -49,7 +49,7 @@ function appendRsvp(rsvp) {
 		guestList += '<tr>' +
 			'<td class="name">'+guest.first_name+' '+guest.last_name+'</td>' +
 			'<td class="attend">'+guest.attend+'</td>' +
-			'<td class="plus_one">'+guest.plus_one+'</td>' +
+			'<td class="group">'+guest.group+'</td>' +
 			'<tr>'
 	});
 
@@ -76,8 +76,8 @@ function countRsvp(rsvp) {
 	var guestCount = 0;
 
 	rsvp.forEach(function(guest) {
-		if (guest.plus_one && guest.attend === "Yes") {
-			guestCount = guestCount + parseInt(guest.plus_one, 10);
+		if (guest.guest && guest.attend === "Yes") {
+			guestCount = guestCount + parseInt(guest.guest, 10);
 		}
 	});
 
