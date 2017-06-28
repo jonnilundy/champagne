@@ -55,7 +55,7 @@ form.addEventListener('submit', function(e) {
 	var message = form.first_name.value + 
 	", we can't begin to describe how much you mean to us. Whether you are able to come or not (we sure hope you can!)," + 
 	" please know that a huge part of why we invited you is because Marissa and I want to welcome you into our future lives together.<br/>" +
-	'<br/>' + "So lets have a wedding already!! :)<br/>" +
+	'<br/>' + "So let's celebrate already!! :)<br/>" +
 	'<br/>' + "With love,<br/>" + "The Lundys :)";
 
 	WeDeploy
@@ -63,7 +63,7 @@ form.addEventListener('submit', function(e) {
 		.auth('email@wedeploy.com', 'pass')
 		.form('from',  'thankyou@jonathanandmarissa.com')
 		.form('to', form.email.value)
-		.form('subject', "We can't wait!!")
+		.form('subject', "Thank You for RSVPing!")
 		.form('message', message )
 		.post()
 		.then(function(response) {
