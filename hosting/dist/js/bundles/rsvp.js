@@ -1,7 +1,7 @@
 var pageComponent =
 webpackJsonppageComponent([0],{
 
-/***/ 125:
+/***/ 123:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11,7 +11,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _metalComponent = __webpack_require__(0);
+var _metalComponent = __webpack_require__(1);
 
 var _metalComponent2 = _interopRequireDefault(_metalComponent);
 
@@ -23,7 +23,7 @@ __webpack_require__(5);
 
 __webpack_require__(4);
 
-var _indexSoy = __webpack_require__(43);
+var _indexSoy = __webpack_require__(42);
 
 var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
@@ -55,14 +55,14 @@ exports.default = rsvp;
 
 /***/ }),
 
-/***/ 43:
+/***/ 42:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rsvp", function() { return rsvp; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_metal_soy__);
@@ -113,10 +113,10 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
   opt_data = opt_data || {};
-  var param49 = function() {
+  var param46 = function() {
     $rsvp(null, null, opt_ijData);
   };
-  $templateAlias1(soy.$$assignDefaults({content: param49}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param46}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
@@ -281,69 +281,6 @@ function $rsvp(opt_data, opt_ignored, opt_ijData) {
         ie_close('div');
         ie_open('div', null, null,
             'class', 'form-group');
-          ie_open('label');
-            itext('Do you, or anyone in your group, have dietary restrictions?');
-          ie_close('label');
-          ie_open('div', null, null,
-              'class', 'row flex-row');
-            ie_open('input', null, null,
-                'class', 'number',
-                'type', 'number',
-                'maxlength', '1',
-                'name', 'gluten',
-                'placeholder', '0',
-                'oninput', 'javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);');
-            ie_close('input');
-            ie_open('label', null, null,
-                'class', 'sublabel');
-              itext('Gluten-Free');
-            ie_close('label');
-          ie_close('div');
-          ie_open('div', null, null,
-              'class', 'row flex-row');
-            ie_open('input', null, null,
-                'class', 'number',
-                'type', 'number',
-                'maxlength', '1',
-                'name', 'dairy',
-                'placeholder', '0',
-                'oninput', 'javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);');
-            ie_close('input');
-            ie_open('label', null, null,
-                'class', 'sublabel');
-              itext('Dairy-Free');
-            ie_close('label');
-          ie_close('div');
-        ie_close('div');
-        ie_open('div', null, null,
-            'class', 'form-group');
-          ie_open('div', null, null,
-              'class', 'row');
-            ie_open('label');
-              itext('What\'s your favorite dance song?');
-            ie_close('label');
-          ie_close('div');
-          ie_open('div', null, null,
-              'class', 'row');
-            ie_open('input', null, null,
-                'type', 'text',
-                'id', 'song',
-                'name', 'song',
-                'placeholder', 'Song');
-            ie_close('input');
-          ie_close('div');
-          ie_open('div', null, null,
-              'class', 'row');
-            ie_open('input', null, null,
-                'type', 'text',
-                'id', 'artist',
-                'name', 'artist',
-                'placeholder', 'Artist');
-            ie_close('input');
-          ie_close('div');
-        ie_close('div');
-        ie_open('div', null, null,
-            'class', 'form-group');
           ie_open('div', null, null,
               'class', 'row');
             ie_open('label');
@@ -401,4 +338,4 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(rsvp, templates);
 
 /***/ })
 
-},[125]);
+},[123]);

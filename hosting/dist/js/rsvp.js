@@ -24,24 +24,22 @@ form.addEventListener('submit', function(e) {
 	e.preventDefault();
 
 	var attending = document.querySelector('input[name="attend"]:checked');
+	var first = document.querySelector('input[name="first_name"]');
+	var last = document.querySelector('input[name="last_name"]');
 
 	var formValues = {
-		first_name: document.querySelector('input[name="first_name"]').value,
-		last_name: document.querySelector('input[name="last_name"]').value,
+		first_name: first.value,
+		last_name: last.value,
 		email: form.email.value,
 		address: form.address.value,
 		attend: attending.value,
-		plus_one: form.plus_one.value,
-		gluten: form.gluten.value,
-		dairy: form.dairy.value,
-		song: form.song.value,
-		artist: form.artist.value,
+		group: form.group.value,
 		message: form.message.value,
 		timestamp: new Date().toISOString()
 	}
 
 	WeDeploy
-		.data('data.jonathan-and-marissa.wedeploy.io')
+		.data('data.portland-reception.wedeploy.io')
 	    .create('rsvp', formValues)
 			.then(function(response) {
 				form.reset();
@@ -58,12 +56,12 @@ form.addEventListener('submit', function(e) {
 	", we can't begin to describe how much you mean to us. Whether you are able to come or not (we sure hope you can!)," + 
 	" please know that a huge part of why we invited you is because Marissa and I want to welcome you into our future lives together.<br/>" +
 	'<br/>' + "So lets have a wedding already!! :)<br/>" +
-	'<br/>' + "With love,<br/>" + "The Lundys";
+	'<br/>' + "With love,<br/>" + "The Lundys :)";
 
 	WeDeploy
-		.url('email.jonathan-and-marissa.wedeploy.io/emails')
+		.url('email.portland-reception.wedeploy.io/emails')
 		.auth('email@wedeploy.com', 'pass')
-		.form('from',  'thankyou@acupofmojo.com')
+		.form('from',  'thankyou@jonathanandmarissa.com')
 		.form('to', form.email.value)
 		.form('subject', "We can't wait!!")
 		.form('message', message )
@@ -73,16 +71,15 @@ form.addEventListener('submit', function(e) {
 			if (response.succeeded()) {
 				form.reset();
 
-				alert('Yay! Thanks for RSVPing, it truly means the world to us!');
-				document.location.href = '/'
-				console.info('Email ID:', response.body());
+				alert('Yay! Thanks for RSVPing. :)');
+				document.location.href = '/details/'
 			}
 			else {
-				alert('Email was not sent');
+				alert('Oops, your thank you email was not sent.');
 			}
 		})
 
 		.catch(function(error) {
-			alert('Oops, some error has happened.');
+			alert('Oops, something went wrong.');
 		});
 });

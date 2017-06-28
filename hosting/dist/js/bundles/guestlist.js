@@ -1,7 +1,7 @@
 var pageComponent =
 webpackJsonppageComponent([3],{
 
-/***/ 122:
+/***/ 121:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11,7 +11,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _metalComponent = __webpack_require__(0);
+var _metalComponent = __webpack_require__(1);
 
 var _metalComponent2 = _interopRequireDefault(_metalComponent);
 
@@ -23,7 +23,7 @@ __webpack_require__(5);
 
 __webpack_require__(4);
 
-var _indexSoy = __webpack_require__(40);
+var _indexSoy = __webpack_require__(39);
 
 var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
@@ -55,14 +55,14 @@ exports.default = guestlist;
 
 /***/ }),
 
-/***/ 40:
+/***/ 39:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "guestlist", function() { return guestlist; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_metal_soy__);
@@ -113,10 +113,10 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
   opt_data = opt_data || {};
-  var param35 = function() {
+  var param32 = function() {
     $guestlist(null, null, opt_ijData);
   };
-  $templateAlias1(soy.$$assignDefaults({content: param35}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param32}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
@@ -152,19 +152,11 @@ function $guestlist(opt_data, opt_ignored, opt_ijData) {
               ie_close('th');
               ie_open('th', null, null,
                   'class', 'th-sm');
-                itext('RSVP');
+                itext('Attend');
               ie_close('th');
               ie_open('th', null, null,
                   'class', 'th-sm');
                 itext('Group');
-              ie_close('th');
-              ie_open('th', null, null,
-                  'class', 'th-sm');
-                itext('Gluten');
-              ie_close('th');
-              ie_open('th', null, null,
-                  'class', 'th-sm');
-                itext('Dairy');
               ie_close('th');
             ie_close('thead');
             ie_void('tbody', null, null,
@@ -173,10 +165,6 @@ function $guestlist(opt_data, opt_ignored, opt_ijData) {
             ie_void('td');
             ie_void('td', null, null,
                 'id', 'guestListTotal');
-            ie_void('td', null, null,
-                'id', 'glutonListTotal');
-            ie_void('td', null, null,
-                'id', 'dairyListTotal');
           ie_close('table');
         ie_close('div');
         ie_open('h2');
@@ -222,4 +210,4 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(guestlist, templates)
 
 /***/ })
 
-},[122]);
+},[121]);

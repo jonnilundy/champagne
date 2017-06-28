@@ -1,7 +1,7 @@
 var pageComponent =
 webpackJsonppageComponent([1],{
 
-/***/ 123:
+/***/ 122:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11,7 +11,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _metalComponent = __webpack_require__(0);
+var _metalComponent = __webpack_require__(1);
 
 var _metalComponent2 = _interopRequireDefault(_metalComponent);
 
@@ -23,7 +23,7 @@ __webpack_require__(5);
 
 __webpack_require__(4);
 
-var _indexSoy = __webpack_require__(42);
+var _indexSoy = __webpack_require__(41);
 
 var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
@@ -55,14 +55,14 @@ exports.default = login;
 
 /***/ }),
 
-/***/ 42:
+/***/ 41:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "login", function() { return login; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_metal_soy___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_metal_soy__);
@@ -113,10 +113,10 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
   opt_data = opt_data || {};
-  var param42 = function() {
+  var param39 = function() {
     $login(null, null, opt_ijData);
   };
-  $templateAlias1(soy.$$assignDefaults({content: param42}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param39}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
@@ -220,4 +220,4 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(login, templates);
 
 /***/ })
 
-},[123]);
+},[122]);
