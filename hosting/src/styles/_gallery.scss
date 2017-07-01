@@ -13,6 +13,7 @@
 	}
 
 	.hashtag {
+		font-family: $font-family-sans;
 		font-size: 16px;
 		margin-bottom: 40px;
 		margin-top: 0px;
@@ -64,11 +65,13 @@
 	}
 
 	.photo-credit {
+		font-family: $font-family-sans;
 		font-size: 16px;
 
 		a {
 			font-style: none;
 			font-weight: 500;
+			text-decoration: underline;
 
 			&:hover {
 				color: rgba($primary, .7);

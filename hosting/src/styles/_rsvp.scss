@@ -12,6 +12,19 @@
         }
 	}
 
+	p {
+		font-family: $font-family-sans;
+		font-size: 16px;
+		font-weight: 100;
+		line-height: inherit;
+
+		@media (min-width: $medium) {
+			font-size: 18px;
+			margin-right: auto;
+			margin-right: auto;
+		}
+	}
+
 	.form-group {
 		font-weight: 100;
 		text-align: left;
