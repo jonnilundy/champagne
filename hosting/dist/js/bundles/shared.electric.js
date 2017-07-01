@@ -731,6 +731,13 @@ function $navigation(opt_data, opt_ignored, opt_ijData) {
     ie_open('li', null, null,
         'class', 'nav-item');
       ie_open('a', null, null,
+          'href', '/');
+        itext('Home');
+      ie_close('a');
+    ie_close('li');
+    ie_open('li', null, null,
+        'class', 'nav-item');
+      ie_open('a', null, null,
           'href', '/rsvp');
         itext('Rsvp');
       ie_close('a');
@@ -769,7 +776,7 @@ function $title(opt_data, opt_ignored, opt_ijData) {
     ie_close('h1');
     ie_open('h2', null, null,
         'class', 'header-desc');
-      itext('are getting married!');
+      itext('got married!');
     ie_close('h2');
   ie_close('div');
 }

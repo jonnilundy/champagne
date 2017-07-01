@@ -139,6 +139,9 @@ function $rsvp(opt_data, opt_ignored, opt_ijData) {
       ie_open('h2');
         itext('RSVP');
       ie_close('h2');
+      ie_open('p');
+        itext('Please respond by July 16th.');
+      ie_close('p');
       ie_open('form', null, null,
           'class', 'rsvp-form',
           'onkeypress', 'return event.keyCode != 13;');
@@ -225,7 +228,7 @@ function $rsvp(opt_data, opt_ignored, opt_ijData) {
               ie_open('label', null, null,
                   'class', 'sublabel',
                   'for', 'accept');
-                itext('Joyfully Accept');
+                itext('Wouldn\'t miss it!');
               ie_close('label');
             ie_close('div');
           ie_close('div');
@@ -242,7 +245,7 @@ function $rsvp(opt_data, opt_ignored, opt_ijData) {
               ie_open('label', null, null,
                   'class', 'sublabel',
                   'for', 'decline');
-                itext('Regretfully decline');
+                itext('Unfortunately, no.');
               ie_close('label');
             ie_close('div');
           ie_close('div');

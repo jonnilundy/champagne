@@ -139,27 +139,30 @@ function $details(opt_data, opt_ignored, opt_ijData) {
       ie_open('div', null, null,
           'class', 'row text-center');
         ie_open('h2');
-          itext(' You\'re invited!');
+          itext('You\'re invited!');
+        ie_close('h2');
+        ie_open('h2');
+          itext('Open House Reception');
         ie_close('h2');
         ie_open('h2', null, null,
             'class', 'detail-sub');
-          itext('June 10th, 2017');
+          itext('July 22nd, 2017');
         ie_close('h2');
         ie_open('p', null, null,
             'class', 'date time');
-          itext('Ceremony starts at 2pm');
+          itext('3pm-7pm');
         ie_close('p');
         ie_open('p', null, null,
             'class', 'date');
-          itext('14208 Chandler Blvd');
+          itext('15005 SW Chardonnay Ave.');
           ie_open('br');
           ie_close('br');
-          itext('Sherman Oaks, CA 91401');
+          itext('Tigard, OR 97224');
         ie_close('p');
         ie_open('p', null, null,
             'class', 'copy-button',
             'id', 'btn',
-            'data-clipboard-text', '14208 Chandler Blvd, Sherman Oaks, CA 91401');
+            'data-clipboard-text', '15005 SW Chardonnay Ave. Tigard, OR 97224');
           ie_open('span', null, null,
               'id', 'success');
             itext('Click here to copy address!');
@@ -171,6 +174,14 @@ function $details(opt_data, opt_ignored, opt_ijData) {
         ie_open('h2');
           itext('Registery');
         ie_close('h2');
+        ie_open('p', null, null,
+            'class', 'registry-info');
+          itext('Your presence is what we desire the most, but if you would like to help us furnish our new home, our registries are below.');
+        ie_close('p');
+        ie_open('p', null, null,
+            'class', 'registry-info');
+          itext('We will have a way to transport gifts from Portland to our home in L.A.');
+        ie_close('p');
         ie_open('a', null, null,
             'href', 'https://secure.williams-sonoma.com/registry/jrwmbcvlnq/registry-list.html',
             'target', '_blank');
@@ -195,6 +206,18 @@ function $details(opt_data, opt_ignored, opt_ijData) {
               'alt', 'Anthropologie');
           ie_close('img');
         ie_close('a');
+      ie_close('div');
+      ie_open('div', null, null,
+          'class', 'row text-center');
+        ie_open('p', null, null,
+            'class', 'registry-info');
+          itext('Please ');
+          ie_open('a', null, null,
+              'href', '/rsvp');
+            itext('RSVP');
+          ie_close('a');
+          itext(' by July 16th.');
+        ie_close('p');
       ie_close('div');
     ie_close('div');
   ie_close('div');

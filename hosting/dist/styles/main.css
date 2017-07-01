@@ -185,6 +185,7 @@ a {
     font-size: 40px;
     color: #050500;
     font-weight: 100;
+    margin: 40px auto 20px;
     letter-spacing: inherit; }
     @media (min-width: 648px) {
       .details h2.detail-sub {
@@ -216,9 +217,24 @@ a {
       font-size: 14px;
       line-height: 10px; } }
 
+.details p.registry-info {
+  font-family: "Cinzel", serif;
+  font-size: 16px;
+  font-weight: 100;
+  margin: 0 5% 18px 5%;
+  padding: 0;
+  line-height: inherit; }
+  @media (min-width: 648px) {
+    .details p.registry-info {
+      font-size: 18px;
+      margin-right: auto;
+      margin-right: auto; } }
+  .details p.registry-info a {
+    text-decoration: underline; }
+
 .details a img {
   max-width: 140px;
-  margin: 10px 10px;
+  margin: 25px 10px;
   padding: 10px;
   border-radius: 2px;
   background: rgba(255, 255, 255, 0.7);
@@ -227,12 +243,12 @@ a {
   @media (min-width: 648px) {
     .details a img {
       max-width: 150px;
-      margin: 10px 10px; }
+      margin: 40px 10px; }
       .details a img:hover {
         box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.12), 0px 3px 8px 3px rgba(0, 0, 0, 0.07); } }
   @media (min-width: 834px) {
     .details a img {
-      ma-width: 200px; } }
+      max-width: 160px; } }
 
 .rsvp h2 {
   font-size: 20px;
@@ -244,6 +260,17 @@ a {
     .rsvp h2 {
       font-size: 30px;
       letter-spacing: 10px; } }
+
+.rsvp p {
+  font-family: "Cinzel", serif;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: inherit; }
+  @media (min-width: 648px) {
+    .rsvp p {
+      font-size: 18px;
+      margin-right: auto;
+      margin-right: auto; } }
 
 .rsvp .form-group {
   font-weight: 100;
@@ -511,7 +538,7 @@ a {
   right: 0;
   z-index: -1;
   position: fixed;
-  background-image: url("/images/flower-background.jpg");
+  background-image: url("/images/brick-background.jpg");
   background-size: cover;
   background-position: center; }
 
@@ -673,6 +700,7 @@ footer {
       letter-spacing: 10px; } }
 
 .gallery .hashtag {
+  font-family: "Cinzel", serif;
   font-size: 16px;
   margin-bottom: 40px;
   margin-top: 0px;
@@ -711,10 +739,12 @@ footer {
       margin: 15px; } }
 
 .gallery .photo-credit {
+  font-family: "Cinzel", serif;
   font-size: 16px; }
   .gallery .photo-credit a {
     font-style: none;
-    font-weight: 500; }
+    font-weight: 500;
+    text-decoration: underline; }
     .gallery .photo-credit a:hover {
       color: rgba(5, 5, 0, 0.7); }
 
