@@ -113,10 +113,10 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
   opt_data = opt_data || {};
-  var param32 = function() {
+  var param25 = function() {
     $gallery(null, null, opt_ijData);
   };
-  $templateAlias1(soy.$$assignDefaults({content: param32}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param25}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
