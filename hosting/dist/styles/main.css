@@ -497,8 +497,8 @@ a {
     font-family: "Cinzel", serif;
     font-weight: 900;
     font-size: 25px;
-    color: rgba(5, 5, 0, 0.1);
-    margin: 50px 0 -5px 0;
+    color: rgba(5, 5, 0, 0.3);
+    margin: 50px 0 10px 0;
     padding: 0;
     line-height: inherit; }
     @media (min-width: 648px) {
