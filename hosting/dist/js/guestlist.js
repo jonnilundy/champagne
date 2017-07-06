@@ -78,7 +78,6 @@ function countRsvp(rsvp) {
 	rsvp.forEach(function(guest) {
 		if (guest.group && guest.attend === "Yes") {
 			guestCount = guestCount + parseInt(guest.group, 10);
-			console.log(guestCount);
 		}
 	});
 
