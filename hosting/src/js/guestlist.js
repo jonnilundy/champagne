@@ -1,7 +1,7 @@
 'use strict';
 
 //
-// AUTH 
+// AUTH
 //
 
 var auth = WeDeploy.auth('auth.jonathan-and-marissa.wedeploy.io');
@@ -17,7 +17,7 @@ function signOut() {
 }
 
 //
-// DATA 
+// DATA
 //
 
 var rsvpList = document.querySelector('.rsvpList');

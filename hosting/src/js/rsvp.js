@@ -52,10 +52,10 @@ form.addEventListener('submit', function(e) {
 			});
 
 
-// EMAIL // 
+// EMAIL //
 
-	var message = form.first_name.value + 
-	", we can't begin to describe how much you mean to us. Whether you are able to come or not (we sure hope you can!)," + 
+	var message = form.first_name.value +
+	", we can't begin to describe how much you mean to us. Whether you are able to come or not (we sure hope you can!)," +
 	" please know that a huge part of why we invited you is because Marissa and I want to welcome you into our future lives together.<br/>" +
 	'<br/>' + "So lets have a wedding already!! :)<br/>" +
 	'<br/>' + "With love,<br/>" + "The Lundys";
