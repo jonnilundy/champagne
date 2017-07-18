@@ -2,7 +2,7 @@
 	{
 		"path": "/rsvp/*",
 		"data": true,
-		"method": "POST",
+		"method": ["POST", "GET"],
 		"parameter": {
 			"first_name": {
 				"type": "string",
@@ -51,7 +51,7 @@
 	{
 		"path": "/rsvp/*",
 		"data": true,
-		"method": ["GET", "PATCH", "PUT", "DELETE"],
+		"method": ["PATCH", "PUT", "DELETE"],
 		"auth": {
  			"validator": "$auth != null"
  		}
