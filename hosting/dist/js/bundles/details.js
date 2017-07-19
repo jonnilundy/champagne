@@ -216,7 +216,7 @@ function $details(opt_data, opt_ignored, opt_ijData) {
               'href', '/rsvp');
             itext('RSVP');
           ie_close('a');
-          itext(' by July 16th.');
+          itext(' by July 21st.');
         ie_close('p');
       ie_close('div');
     ie_close('div');
