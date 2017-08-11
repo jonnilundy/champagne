@@ -4,7 +4,7 @@
 // AUTH
 //
 
-var auth = WeDeploy.auth('auth.jonathan-and-marissa.wedeploy.io');
+var auth = WeDeploy.auth('auth-jonathanandmarissa.wedeploy.io');
 
 if (!auth.currentUser) {document.location.href = '/login';}
 
@@ -31,7 +31,7 @@ var data = WeDeploy.data('data.jonathan-and-marissa.wedeploy.io');
 // Guest List
 
 WeDeploy
-	.data('data.jonathan-and-marissa.wedeploy.io')
+	.data('data-jonathanandmarissa.wedeploy.io')
 	.orderBy('attend')
 	.orderBy('timestamp')
 	.get('rsvp')
