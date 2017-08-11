@@ -75,7 +75,6 @@ form.addEventListener('submit', function(e) {
 
 				alert('Yay! Thanks for RSVPing, it truly means the world to us!');
 				document.location.href = '/'
-				console.info('Email ID:', response.body());
 			}
 			else {
 				alert('Email was not sent');
@@ -84,5 +83,6 @@ form.addEventListener('submit', function(e) {
 
 		.catch(function(error) {
 			alert('Oops, some error has happened.');
+			console.info(error)
 		});
 });

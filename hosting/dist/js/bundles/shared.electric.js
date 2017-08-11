@@ -731,21 +731,21 @@ function $navigation(opt_data, opt_ignored, opt_ijData) {
     ie_open('li', null, null,
         'class', 'nav-item');
       ie_open('a', null, null,
-          'href', '/details');
+          'href', '/details/');
         itext('Details');
       ie_close('a');
     ie_close('li');
     ie_open('li', null, null,
         'class', 'nav-item');
       ie_open('a', null, null,
-          'href', '/rsvp');
+          'href', '/rsvp/');
         itext('Rsvp');
       ie_close('a');
     ie_close('li');
     ie_open('li', null, null,
         'class', 'nav-item');
       ie_open('a', null, null,
-          'href', '/gallery');
+          'href', '/gallery/');
         itext('Gallery');
       ie_close('a');
     ie_close('li');
@@ -1017,6 +1017,33 @@ exports.State = _State2.default;
 
 /***/ }),
 /* 10 */
+/***/ (function(module, exports) {
+
+var g;
+
+// This works in non-strict mode
+g = (function() {
+	return this;
+})();
+
+try {
+	// This works if eval is allowed (see CSP)
+	g = g || Function("return this")() || (1,eval)("this");
+} catch(e) {
+	// This works if the window reference is available
+	if(typeof window === "object")
+		g = window;
+}
+
+// g can still be undefined, but nothing to do about it...
+// We return undefined, instead of nothing here, so it's
+// easier to handle this case. if(!global) { ...}
+
+module.exports = g;
+
+
+/***/ }),
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1051,7 +1078,7 @@ function getData(component) {
 }
 
 /***/ }),
-/* 11 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1984,33 +2011,6 @@ exports.CancellablePromise = CancellablePromise;
 exports.default = CancellablePromise;
 
 /***/ }),
-/* 12 */
-/***/ (function(module, exports) {
-
-var g;
-
-// This works in non-strict mode
-g = (function() {
-	return this;
-})();
-
-try {
-	// This works if eval is allowed (see CSP)
-	g = g || Function("return this")() || (1,eval)("this");
-} catch(e) {
-	// This works if the window reference is available
-	if(typeof window === "object")
-		g = window;
-}
-
-// g can still be undefined, but nothing to do about it...
-// We return undefined, instead of nothing here, so it's
-// easier to handle this case. if(!global) { ...}
-
-module.exports = g;
-
-
-/***/ }),
 /* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2066,7 +2066,7 @@ var _metal = __webpack_require__(1);
 
 var _metal2 = _interopRequireDefault(_metal);
 
-var _metalPromise = __webpack_require__(11);
+var _metalPromise = __webpack_require__(12);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -2633,7 +2633,7 @@ var _metalUri = __webpack_require__(113);
 
 var _metalUri2 = _interopRequireDefault(_metalUri);
 
-var _metalPromise = __webpack_require__(11);
+var _metalPromise = __webpack_require__(12);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -2773,7 +2773,7 @@ var _metalDom = __webpack_require__(3);
 
 var _metalDom2 = _interopRequireDefault(_metalDom);
 
-var _metalPromise = __webpack_require__(11);
+var _metalPromise = __webpack_require__(12);
 
 var _metalPromise2 = _interopRequireDefault(_metalPromise);
 
@@ -3649,7 +3649,7 @@ __webpack_require__(31);
 
 var _changes = __webpack_require__(29);
 
-var _data = __webpack_require__(10);
+var _data = __webpack_require__(11);
 
 var _children = __webpack_require__(30);
 
@@ -4017,7 +4017,7 @@ exports.clearChanges = clearChanges;
 exports.getChanges = getChanges;
 exports.trackChanges = trackChanges;
 
-var _data = __webpack_require__(10);
+var _data = __webpack_require__(11);
 
 /**
  * Clears the changes tracked so far.
@@ -4533,7 +4533,7 @@ if (isNode && process.env.NODE_ENV !== 'test') {
 
 	/* eslint-enable */
 }
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(17), __webpack_require__(12)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(17), __webpack_require__(10)))
 
 /***/ }),
 /* 32 */
@@ -5770,7 +5770,7 @@ var scope = typeof exports !== 'undefined' && typeof global !== 'undefined' ? gl
 });
 
 /* eslint-enable */
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(12)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(10)))
 
 /***/ }),
 /* 33 */
@@ -5801,7 +5801,7 @@ var _changes = __webpack_require__(29);
 
 var _metalDom = __webpack_require__(3);
 
-var _data = __webpack_require__(10);
+var _data = __webpack_require__(11);
 
 var _metal = __webpack_require__(1);
 
@@ -7846,7 +7846,7 @@ var _metal = __webpack_require__(1);
 
 var _metal2 = _interopRequireDefault(_metal);
 
-var _metalPromise = __webpack_require__(11);
+var _metalPromise = __webpack_require__(12);
 
 var _metalPromise2 = _interopRequireDefault(_metalPromise);
 
@@ -9728,7 +9728,7 @@ var _metalDom = __webpack_require__(3);
 
 var _metalDom2 = _interopRequireDefault(_metalDom);
 
-var _metalPromise = __webpack_require__(11);
+var _metalPromise = __webpack_require__(12);
 
 var _metalPosition = __webpack_require__(13);
 
@@ -13978,7 +13978,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.disposeUnused = disposeUnused;
 exports.schedule = schedule;
 
-var _data = __webpack_require__(10);
+var _data = __webpack_require__(11);
 
 var comps_ = [];
 var disposing_ = false;
@@ -14222,7 +14222,7 @@ exports.patch = patch;
 
 var _metalDom = __webpack_require__(3);
 
-var _data = __webpack_require__(10);
+var _data = __webpack_require__(11);
 
 var _render = __webpack_require__(33);
 
@@ -20868,7 +20868,7 @@ __webpack_require__(27);
     return IncrementalDOM;
   });
 }).call(typeof exports !== 'undefined' && typeof global !== 'undefined' ? global : window);
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(12)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(10)))
 
 /***/ }),
 /* 99 */
@@ -24246,8 +24246,8 @@ if (typeof URL === 'undefined' && "function" !== 'undefined') {
 	// in this case we should use the "url" NPM module as the parse function.
 	// In ReactNative env "path" will be replaced with "path-browserify".
 
-	var path = __webpack_require__(126);
-	var url = __webpack_require__(133);
+	var path = __webpack_require__(127);
+	var url = __webpack_require__(134);
 
 	Uri.setParseFn(function(urlStr) {
 		var parsed = url.parse(urlStr);
@@ -24645,7 +24645,7 @@ async.nextTick.wrapCallback_ = function (opt_returnValue) {
 };
 
 exports.default = async;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(132).setImmediate))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(133).setImmediate))
 
 /***/ }),
 /* 116 */
@@ -25292,6 +25292,26 @@ exports.default = string;
 /* 126 */
 /***/ (function(module, exports, __webpack_require__) {
 
+/* WEBPACK VAR INJECTION */(function(global) {var win;
+
+if (typeof window !== "undefined") {
+    win = window;
+} else if (typeof global !== "undefined") {
+    win = global;
+} else if (typeof self !== "undefined"){
+    win = self;
+} else {
+    win = {};
+}
+
+module.exports = win;
+
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(10)))
+
+/***/ }),
+/* 127 */
+/***/ (function(module, exports, __webpack_require__) {
+
 /* WEBPACK VAR INJECTION */(function(process) {// Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -25520,7 +25540,7 @@ var substr = 'ab'.substr(-1) === 'b'
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(17)))
 
 /***/ }),
-/* 127 */
+/* 128 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(module, global) {var __WEBPACK_AMD_DEFINE_RESULT__;/*! https://mths.be/punycode v1.4.1 by @mathias */
@@ -26056,10 +26076,10 @@ var substr = 'ab'.substr(-1) === 'b'
 
 }(this));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(135)(module), __webpack_require__(12)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(136)(module), __webpack_require__(10)))
 
 /***/ }),
-/* 128 */
+/* 129 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26150,7 +26170,7 @@ var isArray = Array.isArray || function (xs) {
 
 
 /***/ }),
-/* 129 */
+/* 130 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26242,18 +26262,18 @@ var objectKeys = Object.keys || function (obj) {
 
 
 /***/ }),
-/* 130 */
+/* 131 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-exports.decode = exports.parse = __webpack_require__(128);
-exports.encode = exports.stringify = __webpack_require__(129);
+exports.decode = exports.parse = __webpack_require__(129);
+exports.encode = exports.stringify = __webpack_require__(130);
 
 
 /***/ }),
-/* 131 */
+/* 132 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, process) {(function (global, undefined) {
@@ -26443,10 +26463,10 @@ exports.encode = exports.stringify = __webpack_require__(129);
     attachTo.clearImmediate = clearImmediate;
 }(typeof self === "undefined" ? typeof global === "undefined" ? this : global : self));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(12), __webpack_require__(17)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(10), __webpack_require__(17)))
 
 /***/ }),
-/* 132 */
+/* 133 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var apply = Function.prototype.apply;
@@ -26499,13 +26519,14 @@ exports._unrefActive = exports.active = function(item) {
 };
 
 // setimmediate attaches itself to the global object
-__webpack_require__(131);
-exports.setImmediate = setImmediate;
-exports.clearImmediate = clearImmediate;
+__webpack_require__(132);
+var global = __webpack_require__(126);
+exports.setImmediate = global.setImmediate;
+exports.clearImmediate = global.clearImmediate;
 
 
 /***/ }),
-/* 133 */
+/* 134 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26532,8 +26553,8 @@ exports.clearImmediate = clearImmediate;
 
 
 
-var punycode = __webpack_require__(127);
-var util = __webpack_require__(134);
+var punycode = __webpack_require__(128);
+var util = __webpack_require__(135);
 
 exports.parse = urlParse;
 exports.resolve = urlResolve;
@@ -26608,7 +26629,7 @@ var protocolPattern = /^([a-z0-9.+-]+:)/i,
       'gopher:': true,
       'file:': true
     },
-    querystring = __webpack_require__(130);
+    querystring = __webpack_require__(131);
 
 function urlParse(url, parseQueryString, slashesDenoteHost) {
   if (url && util.isObject(url) && url instanceof Url) return url;
@@ -27244,7 +27265,7 @@ Url.prototype.parseHost = function() {
 
 
 /***/ }),
-/* 134 */
+/* 135 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27267,7 +27288,7 @@ module.exports = {
 
 
 /***/ }),
-/* 135 */
+/* 136 */
 /***/ (function(module, exports) {
 
 module.exports = function(module) {

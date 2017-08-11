@@ -1,6 +1,6 @@
 'use strict';
 
-var auth = WeDeploy.auth('auth.jonathan-and-marissa.wedeploy.io');
+var auth = WeDeploy.auth('auth-jonathanandmarissa.wedeploy.io');
 
 var popup = document.getElementById('popup');
 

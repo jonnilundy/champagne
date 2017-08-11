@@ -41,7 +41,7 @@ form.addEventListener('submit', function(e) {
 	}
 
 	WeDeploy
-		.data('data.jonathan-and-marissa.wedeploy.io')
+		.data('data-jonathanandmarissa.wedeploy.io')
 	    .create('rsvp', formValues)
 			.then(function(response) {
 				form.reset();
@@ -61,13 +61,13 @@ form.addEventListener('submit', function(e) {
 	'<br/>' + "With love,<br/>" + "The Lundys";
 
 	WeDeploy
-		.url('email.jonathan-and-marissa.wedeploy.io/emails')
+		.email('email-jonathanandmarissa.wedeploy.io')
 		.auth('email@wedeploy.com', 'pass')
-		.form('from',  'thankyou@acupofmojo.com')
-		.form('to', form.email.value)
-		.form('subject', "We can't wait!!")
-		.form('message', message )
-		.post()
+		.from('thankyou@jonathanandmarissa.com')
+		.to(form.email.value)
+		.subject("We can't wait!!")
+		.message(message)
+		.send()
 		.then(function(response) {
 			console.log(response);
 			if (response.succeeded()) {
