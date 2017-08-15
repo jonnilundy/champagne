@@ -5,7 +5,7 @@
         line-height: normal;
         letter-spacing: 5px;
         font-weight: bold;
-        
+
         @media (min-width: $medium) {
             font-size: 30px;
             letter-spacing: 10px
@@ -113,9 +113,9 @@
 			}
 
 			&.message {
-				
+
 			}
-			
+
 			&[name="guest_count"] {
 				width: 100%;
 			}
@@ -144,7 +144,7 @@
 				top: 0px;
 			}
 		}
-		
+
 		/* Placeholder compatability */
 		::-webkit-input-placeholder { /* WebKit, Blink, Edge */
 		    color: rgba($primary, .6);
@@ -175,7 +175,7 @@
 		margin-bottom: 10px;
 		text-align: center;
 		transition-duration: 0.333s;
-		
+
 		&:focus {
 			outline: none;
 		}
@@ -198,7 +198,7 @@
 		@media (min-width: $medium) {
 			font-size: 20px;
 		}
-		
+
 		a {
 			font-style: none;
 			font-weight: 300;
