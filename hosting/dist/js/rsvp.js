@@ -70,19 +70,18 @@ form.addEventListener('submit', function(e) {
 		.send()
 		.then(function(response) {
 			console.log(response);
-			if (response.succeeded()) {
+			if (response) {
 				form.reset();
 
 				alert('Yay! Thanks for RSVPing, it truly means the world to us!');
 				document.location.href = '/'
-				console.info('Email ID:', response.body());
 			}
 			else {
 				alert('Email was not sent');
 			}
 		})
-
 		.catch(function(error) {
 			alert('Oops, some error has happened.');
+			console.info(error)
 		});
 });
