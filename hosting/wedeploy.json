@@ -1,7 +1,7 @@
 {
     "id": "hosting",
-    "image": "wedeploy/hosting:0.0.1",
+    "image": "wedeploy/hosting:1.0.2",
     "env": {
-        "WEDEPLOY_WEB_PATH": "dist"
+        "WEDEPLOY_WEB_PATH": "./dist"
     }
 }
