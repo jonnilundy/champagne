@@ -1,6 +1,6 @@
 {
     "id": "hosting",
-    "image": "wedeploy/hosting:1.0.2",
+    "image": "wedeploy/hosting:2.0.0",
     "env": {
         "WEDEPLOY_WEB_PATH": "./dist"
     }

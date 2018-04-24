@@ -1,51 +1,49 @@
 {namespace base}
 
 /**
- * @param page
- * @param site
- * @param content
- * @param scripts
- * @param serialized
  */
 {template .render}
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta content="minimum-scale=1.0, width=device-width" name="viewport">
-		<meta name="description" content="{$page.description ?: ''}">
-		<meta property="og:image" content="/images/open-graph.jpg">
+	{@param content: ?}
+	{@param page: ?}
+	{@param serialized: ?}
+	{@param site: ?}
+	{@param scripts: ?}
 
-		<title>{$page.title} - {$site.title}</title>
-		<link href="https://fonts.googleapis.com/css?family=Cinzel|Raleway:100,300,500,700|Herr+Von+Muellerhoff" rel="stylesheet">
-		<link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+	<html>
+		<head>
+			<meta charset="UTF-8">
+			<meta content="minimum-scale=1.0, width=device-width" name="viewport">
+			<meta name="description" content="{$page.description ?: ''}">
+			<meta property="og:image" content="/images/open-graph.jpg">
 
-		<script src="https://cdn.wedeploy.com/api/3.0.2/wedeploy.js"></script>
-		<script src="/js/clipboard.min.js"></script>
+			<title>{$page.title} - {$site.title}</title>
+			<link href="https://fonts.googleapis.com/css?family=Cinzel|Raleway:100,300,500,700|Herr+Von+Muellerhoff" rel="stylesheet">
+			<link rel="icon" href="/images/favicon.ico" type="image/x-icon">
 
-		<!-- inject:css -->
-		<!-- endinject -->
+			<script src="https://cdn.wedeploy.com/api/4.2.0/wedeploy.js"></script>
+			<script src="/js/clipboard.min.js"></script>
 
-		<!-- inject:js -->
+			<!-- inject:css -->
+			<!-- endinject -->
 
-		<!-- endinject -->
+			<!-- inject:js -->
+			<!-- endinject -->
 
-		<link rel="stylesheet" href="/styles/main.css">
-		<link rel="stylesheet" href="/fonts/icon-16/icon-16.css">
-	</head>
-	<body data-senna data-senna-surface>
-		<!-- inject:metal:js -->
-			<div>
-				{$content}
-			</div>
-		<!-- endinject -->
+			<link rel="stylesheet" href="/styles/main.css">
+			<link rel="stylesheet" href="/fonts/icon-16/icon-16.css">
+		</head>
+		<body data-senna data-senna-surface>
+			<!-- inject:metal:js -->
+				<div>
+					{$content}
+				</div>
+			<!-- endinject -->
 
-		{if $scripts}
-			{foreach $script in $scripts}
-				<script src="{$script}"></script>
-			{/foreach}
-		{/if}
-		</div>
-	</body>
-</html>
+			{if $scripts}
+				{foreach $script in $scripts}
+					<script src="{$script}"></script>
+				{/foreach}
+			{/if}
+		</body>
+	</html>
 {/template}

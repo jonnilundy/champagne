@@ -62,8 +62,8 @@ form.addEventListener('submit', function(e) {
 
 	WeDeploy
 		.email('email-jonathanandmarissa.wedeploy.io')
-		.auth('email@wedeploy.com', 'pass')
-		.from('thankyou@jonathanandmarissa.com')
+		.auth('176add4e-e3c1-4e63-8940-9bef23f7bf14')
+		.from('thankyou@jonathanandmarissa.wedeploy.io')
 		.to(form.email.value)
 		.subject("We can't wait!!")
 		.message(message)
